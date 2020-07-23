@@ -1,0 +1,76 @@
+
+.advantages-about-company-fon {
+	background-image: url("../img/advantages-fon.svg");
+	background-position: strech;
+	padding: 9% 11% 13%;
+	background-size: cover;
+
+	@media (min-width: 768px) and (max-width: 1023px) {
+		padding: 7% 3% 10%;
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+		padding: 11% 5% 19%;
+	}
+}
+
+.advantages {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	@media (min-width: 320px) and (max-width: 767px) {
+	flex-direction: column;
+	align-items: center;
+	}
+}
+
+.advantages img {
+	max-width: 36px;
+
+	@media (max-width: 1023px) {
+	max-width: 32px;
+	}
+}
+
+.advantages__item {
+	width: 47%;
+	padding: 50px;
+	margin: 10px;
+
+	@media (min-width: 768px) and (max-width: 1023px) {
+	width: 46%;
+	padding: 30px;
+	}
+
+	@media (min-width: 320px) and (max-width: 767px) {
+	width: 100%;
+	padding: 20px;
+	}
+
+	&:hover {
+	cursor: pointer;
+	}
+}	
+
+/*отступы скорректировать*/
+.about-company {
+	margin-top: 90px;
+	display: flex;
+	
+	img {
+	@media (min-width: 320px) and (max-width: 767px) {
+	display: none;
+	}
+	}
+}
+
+.about-company__button {
+	border-radius: 5px;
+	margin-top: 20px;
+	padding: 20px 50px;
+	
+	&:hover {
+	cursor: pointer;
+	}
+}	

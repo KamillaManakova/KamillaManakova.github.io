@@ -1,0 +1,49 @@
+
+.consult {
+	height: 670px;
+	background-image: url("../img/consult-fon.svg");
+	background-position: strech;
+	padding: 5% 11% 13%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	img {
+	width: 511px;
+	height: 288px;
+	
+	@media (max-width: 1023px) {
+	display: none;
+	}
+	}
+}
+
+.consult__form {
+
+	input[type^="te"]  {
+	width: 270px;
+	height: 50px;
+	}
+
+	input[type="checkbox"] {
+	width: auto;
+	}	
+
+	textarea {
+	width: 570px;
+	height: 154px;
+	}
+}
+
+
+.consult__button {
+	width: 270px;
+	height: 45px;
+	border-radius: 5px;
+	padding: 20px 50px;
+
+	&:hover {
+	cursor: pointer;
+	}
+}
+

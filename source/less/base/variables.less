@@ -1,0 +1,29 @@
+@color-blueDark: #1B2D37;
+@color-blueLight: #00B2FF;
+@color-white: #FFF;
+@color-grey: #666666;
+
+@border-blueLight: 1px solid @color-blueLight;
+@border-white: 1px solid @color-white;
+
+@border-radius_5px:	border-radius: 5px;
+
+.button_BlueToWhite() {
+	background-color: @color-blueLight;
+	color: @color-white;
+	
+	&:hover {
+	background-color: @color-white;
+	color: @color-blueLight;
+	}
+}
+
+.button_WhiteToBlue() {
+	background-color: @color-white;
+	color: @color-blueLight;
+	
+	&:hover {
+	background-color: @color-blueLight;
+	color: @color-white;
+	}
+}

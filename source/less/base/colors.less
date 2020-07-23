@@ -1,0 +1,166 @@
+a {
+	color: inherit;
+}
+
+@color-blueDark: #1B2D37;
+@color-blueLight: #00B2FF;
+@color-white: #FFF;
+@color-grey: #666666;
+
+@border-blueLight: 1px solid @color-blueLight;
+@border-white: 1px solid @color-white;
+
+.button_BlueToWhite() {
+	background-color: @color-blueLight;
+	color: @color-white;
+	
+	&:hover {
+	background-color: @color-white;
+	color: @color-blueLight;
+	}
+}
+
+.button_WhiteToBlue() {
+	background-color: @color-white;
+	color: @color-blueLight;
+	
+	&:hover {
+	background-color: @color-blueLight;
+	color: @color-white;
+	}
+}
+
+.header {
+	background-color: @color-blueDark;
+	
+	h1, p {
+	color: @color-white;
+	}
+}
+
+.header__button {
+	border: @border-blueLight;
+	.button_BlueToWhite;
+}
+
+.header__item a>p {
+	color: fade(@color-white, 50%);
+}
+
+
+.advantages {
+	background-color: @color-white;
+}
+
+.advantages__item {
+	border: 1px solid #EBEBEB;
+	border-left: 2px solid @color-blueLight;
+	
+	h4 {
+	color: @color-blueLight;
+	}	
+
+	p {
+	color: @color-grey;
+	}	
+
+	&:hover {
+	background-color:@color-blueLight;
+	}	
+
+	&:hover svg path {
+	fill: @color-white;
+	}
+
+	&:hover h4 {
+	color: @color-white;
+	}
+	
+	&:hover p {
+	color: @color-white;
+	}
+}
+
+
+.about-company {
+	background-color: @color-white;
+}
+
+.about-company_text {
+	h3, p {
+	color: @color-grey;
+	}
+}
+
+.about-company__button {
+	border: @border-blueLight;
+	.button_WhiteToBlue;
+
+	&:hover {
+	border: @border-white;
+	}
+}
+
+.services {
+	background-color: @color-blueDark;
+	
+	h2, p {
+	color: @color-white;
+	}
+}
+
+.services__production, .services__montage, .services__complect {
+	background-blend-mode: overlay;
+	background-color: fade(@color-blueDark, 70%);
+}
+
+.services__button {
+	.button_BlueToWhite;
+	
+	&:hover {
+	border: @border-blueLight;
+	}
+}
+
+
+.consult {
+	background-color: @color-blueLight;
+	color: @color-white;
+	
+	input, textarea {
+	background-color: fade(@color-white, 10%);
+	color: @color-white;
+	border: @border-blueLight;
+	
+	&:focus{
+	border: @border-white;
+	}
+	}
+}
+
+.consult__button {
+	.button_BlueToWhite;
+	border: @border-white;
+	
+	&:hover {
+	border: @border-blueLight;
+	}
+}
+
+
+.footer {
+	background-color: @color-white;
+
+	h4 {
+	color: @color-blueDark;
+	}
+
+	p {
+	color: 
+	fade(@color-blueDark, 50%);
+	}
+}
+
+.footer__bottom-container {	
+	border-top: 1px solid fade(#626962, 20%);
+}

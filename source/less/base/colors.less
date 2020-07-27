@@ -30,12 +30,27 @@ a {
 	}
 }
 
+.button_Transparent() {
+	background-color: fade(@color-white, 0%);
+	color: @color-white;
+	border: @border-white;
+	
+	&:hover {
+	color: @color-blueLight;
+	border: @border-blueLight;
+	}
+}
+
 .header-menu-fon {
 	background-color: @color-blueDark;
 	
 	h1, p, li {
 	color: @color-white;
 	}
+}
+
+.menu__button {
+	.button_Transparent;
 }
 
 .header__button {

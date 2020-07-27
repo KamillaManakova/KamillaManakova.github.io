@@ -1,21 +1,61 @@
 .header-menu-fon {
 	background-image: url("../img/ocean.svg");
+	padding-top: 32px;
 	
 	.menu {
-	max-width: 1411px;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 4%;
+	margin-right: 8%;
 	
 	ul { 
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	margin: 0;
 	
 	li {
 	list-style-type: none;
+	vertical-align: middle;
+	
+	span~svg {
+	max-width: 19px;
+
+	@media (max-width: 1023px) {
+	max-width: 25px;
+	}
+}	
+	span {
+	@media (max-width: 1023px) {
+	display: none;
 	}
 	}
+	}
+	}
+	}
+}
+
+.menu img[src*="white"] {
+	@media (max-width: 768px) {
+	display: none;
+	}
+}
+
+.menu img[src*="mobile"] {
+	@media (min-width: 767px) {
+	display: none;
+	}
+}
+
+.menu__button {
+	border-radius: 5px;
+	margin-top: 20px;
+	padding: 20px 50px;
+	
+	&:hover {
+	cursor: pointer;
+	}
+	
+	@media (max-width: 1023px) {
+	display: none;
 	}
 }
 

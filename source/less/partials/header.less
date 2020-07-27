@@ -1,6 +1,26 @@
+.header-menu-fon {
+	background-image: url("../img/ocean.svg");
+	
+	.menu {
+	max-width: 1411px;
+	margin-left: 5%;
+	margin-right: 5%;
+	
+	ul { 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	
+	li {
+	list-style-type: none;
+	}
+	}
+	}
+}
+
 .header {
 	padding: 14% 9% 5% 6%;
-	background-image: url("../img/ocean.svg");
 	display: flex;
 	justify-content: center;
 
@@ -11,10 +31,6 @@
 	p {
 	margin-left: 90px;
 	}
-}
-
-.menu {
-	display: flex;
 }
 
 .header__button {
@@ -71,10 +87,10 @@
 	}
 	
 	img {
-	max-width: 120%;
+	width: 100%;
 	}
 	
 	@media (min-width: 320px) and (max-width: 767px) {
-	max-width: 80%;
+	width: 80%;
 	}
 }

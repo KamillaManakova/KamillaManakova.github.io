@@ -9,7 +9,7 @@ a {
 
 @border-blueLight: 1px solid @color-blueLight;
 @border-white: 1px solid @color-white;
-
+/*рамки кнопок после нажатия черные это видимо состояние focus */
 .button_BlueToWhite() {
 	background-color: @color-blueLight;
 	color: @color-white;
@@ -129,11 +129,9 @@ a {
 }
 
 .services__button {
-	.button_BlueToWhite;
-	
-	&:hover {
+	background-color: @color-blueLight;
+	color: @color-white;
 	border: @border-blueLight;
-	}
 }
 
 

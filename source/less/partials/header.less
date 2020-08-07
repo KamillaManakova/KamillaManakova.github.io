@@ -3,8 +3,8 @@
 	padding-top: 32px;
 	
 	.menu {
-	margin-left: 4%;
-	margin-right: 8%;
+	margin-left: 1%;
+	margin-right: 3%;
 	
 	@media (max-width: 1023px) {
 	margin-left: 0;	
@@ -123,37 +123,46 @@
 	display: none;
 	}
 }
-
+/*позиционирование треугольников*/
 .header {
-	padding: 14% 9% 5% 6%;
+	background: url("../img/header-fon.svg") right 60px top no-repeat;
+	padding: 10% 2% 5% 3%;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+
+	@media (max-width: 1023px) {
+	background-position: right -100px top -100px;
+	background-size: 502px 502px;
+	padding: 10% 0 7% 3%;
+	}
 
 	@media (min-width: 320px) and (max-width: 767px) {
+	background-position: right -250px top -100px;
+	background-size: 480px 480px;
+	padding: 10% 2% 13% 2%;
 	flex-direction: column-reverse;
-	}
-	
-	p {
-	margin-left: 90px;
+	align-items: center;
 	}
 }
 
 .header__button {
 	width: 407px;
 	height: 55px;
-	padding: 20px 40px;
+	padding: 17px 34px;
 	border-radius: 5px;
 	margin-top: 30px;
 	margin-left: 90px;
 
 	@media (min-width: 768px) and (max-width: 1023px) {
-	width: 379px;
-	height: 55px;
+	width: 80%;
+	margin-top: 60px;
+	margin-left: 50px;
 	}
 
 	@media (min-width: 320px) and (max-width: 767px) {
-	width: 287px;
-	height: 55px;
+	width: 90%;
+	margin-top: 45px;
+	margin-left: 0;
 	}
 
 	&:hover {
@@ -175,10 +184,27 @@
 	}
 }
 
-/*прямоугольник на линии с абзацем?*/
-.header__item {
 
-/*мигающий скролл вниз?*/
+.header__item {
+	
+	h1~p { 
+	padding-left: 90px;
+	background: url("../img/header_rect.svg") no-repeat;
+	background-position: left 3px top 21px;
+	
+	
+	@media (max-width: 1023px) {
+	background-size: 33px;
+	padding-left: 50px;
+	background-position: left 3px top 17px;
+	}
+	
+	@media (max-width: 767px) {
+	background-position: left 3px top 16px;	
+	}
+	}
+
+	
 	a>p {
 	transform: rotate(-90deg);
 	margin-top: 100px;
@@ -190,12 +216,24 @@
 	display: none;
 	}
 	}
-	
-	img {
+
+	&:last-child {
+	background: url("../img/panel.png") no-repeat;
 	width: 100%;
+	max-width: 705px;
+	height: 515px;
+	
+	@media (max-width: 1023px) {
+	width: 50%;
+	background-size: 465px 340px;
 	}
 	
-	@media (min-width: 320px) and (max-width: 767px) {
-	width: 80%;
+	@media (max-width: 767px) {
+	background-size: 301px 220px;
+	background-position: right;
+	width: 100%;
+	height: 220px;
+	margin-bottom: -40px;
+	}
 	}
 }

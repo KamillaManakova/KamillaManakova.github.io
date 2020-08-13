@@ -7,12 +7,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<link href = "css/style.min.css" rel = "stylesheet">
+		<link rel="shortcut icon" href="/img/circuit.png" type="image/png">
+		
+		<!--
+https://puzzleweb.ru/html/18_favicon-ico.php
+http://htmlbook.ru/faq/kak-dobavit-ikonku-sayta-v-adresnuyu-stroku-brauzera
+https://htmlacademy.ru/blog/boost/graphics/short-18
+		-->
 
 		<title>Сайт Service Device</title>
+		<script src ="js/popup.js"></script>
 	</head>
 
 	
 	<body>
+	
+		<div class = "popup__display" id = "popup__display">
+		<form class = "form popup__form"  action = "#!" method = "post" enctype = "multipart/form-data">
+			
+			<button class= "popup__cancel" type = "button" onclick="closeForm()">&#10006;</button>
+			<h3>Закажите звонок</h3>
+			<p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+				<input type = "text" name = "Name" value = "Имя">
+				<input type = "tel" name = "Phone" value = "Телефон" maxlength = "10">
+			<textarea name = "Query" rows = 4>Ваш вопрос</textarea>
+			<button class = "popup__button" type = "submit" value = "Submit">отправить</button>
+			<input type = "checkbox" id = "popup__checkbox" checked name = "Agreed" value = "Yes"><label for = "popup__checkbox">Я согласен на обработку персональных данных</label>
+		</form>
+		</div>
+		
 		<div class = "header-menu-fon">
 			<nav class = "menu">
 				<ul>
@@ -31,7 +54,7 @@
 					</a></li>
 					
 					<li>
-						<button class = "menu__button" type = "button">заказать звонок</button>
+						<button class = "menu__button" type = "button" onclick="openForm()">заказать звонок</button>
 					</li>
 				</ul>
 			</nav>	

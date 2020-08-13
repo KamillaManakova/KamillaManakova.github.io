@@ -18,6 +18,10 @@ a {
 	background-color: @color-white;
 	color: @color-blueLight;
 	}
+	
+	&:active, &:focus {
+	outline: none;
+	}
 }
 
 .button_WhiteToBlue() {
@@ -27,6 +31,10 @@ a {
 	&:hover {
 	background-color: @color-blueLight;
 	color: @color-white;
+	}
+	
+	&:active, &:focus {
+	outline: none;
 	}
 }
 
@@ -39,6 +47,48 @@ a {
 	color: @color-blueLight;
 	border: @border-blueLight;
 	}
+	
+	&:active, &:focus {
+	outline: none;
+	}
+}
+
+.form () {
+	background-color: @color-blueLight;
+	color: @color-white;
+	
+	input, textarea {
+	background-color: fade(@color-white, 10%);
+	border: @border-blueLight;
+	color: @color-white;
+	
+	&:focus{
+	border: @border-white;
+	}
+	}
+}
+
+.popup__display {
+	background-color: fade(#000, 50%);
+}
+
+.popup__form {
+	.form;
+	
+	label:before {
+	border: @border-white;
+	color: @color-white;	
+	}
+}
+
+.popup__cancel {
+	background-color: @color-blueLight;
+	color: @color-white;
+}
+
+.popup__button {
+	.button_BlueToWhite;
+	border: @border-white;
 }
 
 .header-menu-fon {
@@ -136,18 +186,7 @@ a {
 
 
 .consult {
-	background-color: @color-blueLight;
-	color: @color-white;
-	
-	input, textarea {
-	background-color: fade(@color-white, 10%);
-	color: @color-white;
-	border: @border-blueLight;
-	
-	&:focus{
-	border: @border-white;
-	}
-	}
+	.form;
 }
 
 .consult__button {

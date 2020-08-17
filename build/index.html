@@ -32,7 +32,8 @@ https://htmlacademy.ru/blog/boost/graphics/short-18
 				<input type="tel" name="Phone" value="Телефон" maxlength="10">
 			<textarea name="Query" rows="4">Ваш вопрос</textarea>
 			<button class="popup__button" type="submit" value="Submit">отправить</button>
-			<input type="checkbox" id="popup__checkbox" checked="" name="Agreed" value="Yes"><label for="popup__checkbox">Я согласен на обработку персональных данных</label>
+			<input type="checkbox" id="popup__checkbox" checked="" name="Agreed" value="Yes">
+			<label for="popup__checkbox">Я согласен на обработку персональных данных</label>
 		</form>
 		</div>
 		
@@ -203,20 +204,22 @@ https://htmlacademy.ru/blog/boost/graphics/short-18
 		
 		<div class="consult" id="consult">
 		
-			<img src="img/plane.png" alt="plane">
+			<div class="consult__item"></div>
 			
-			<form class="consult__form" action="#!" method="post" enctype="multipart/form-data">
-					<h3>Остались вопросы? Задайте их нам!</h3>
-					<p>Мы проконсультируем Вас бесплатно</p><p>
-					<input type="text" name="Name" value="Имя">
-					<input type="tel" name="Phone" value="Телефон">
-					<br>
-					<textarea name="Query" rows="10">Ваш вопрос</textarea>
-					<br>
-					<input class="consult__button" type="submit" value="задать вопрос">
-					<label><input type="checkbox" checked="" name="Agreed" value="Yes">Я согласен на обработку персональных данных</label>
-			</p></form>
-			
+			<div class="consult__item">
+				<form class="form consult__form" action="#!" method="post" enctype="multipart/form-data">
+						<h3>Остались вопросы? Задайте их нам!</h3>
+						<p>Мы проконсультируем Вас бесплатно</p><p>
+							<div class="consult__input">
+								<input type="text" name="Name" value="Имя">
+								<input type="tel" name="Phone" value="Телефон">
+							</div>
+						<textarea name="Query" rows="10">Ваш вопрос</textarea>
+						<button class="consult__button" type="submit" value="Submit">задать вопрос</button>
+						<input type="checkbox" id="consult__checkbox" checked="" name="Agreed" value="Yes">
+						<label for="consult__checkbox">Я согласен на обработку персональных данных</label>
+				</p></form>
+			</div>
 		</div>
 		
 		

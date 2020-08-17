@@ -16,8 +16,42 @@ http://shpargalkablog.ru/2011/09/html-pop-up-css.html  */
   z-index: 100;
 }
 
+.form {
+	input[type^="te"] {
+	width: 100%;
+	padding: 14px 24px;
+	margin-bottom: 30px;
+	}
+	
+	textarea {
+	width: 100%;
+	resize: none;   
+	padding: 14px 24px;
+	margin-bottom: 30px;
+	}	
+	
+	input[type="checkbox"] {
+	display: none;
+	}
+	
+	label {
+	display: inline-flex;
+	
+	&:before {
+	content:'';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	}
+	}
+	
+	input[type="checkbox"]:checked + label:before {
+	background: url("../img/checkbox.svg") no-repeat center;
+	}
+}
 
 .popup__form {
+	
 	max-width: 490px;
 	height: 605px;
 	margin: 5% auto;
@@ -36,38 +70,12 @@ http://shpargalkablog.ru/2011/09/html-pop-up-css.html  */
 	margin-bottom: 35px;
 	}
 	
-	input[type^="te"] {
-	width: 100%;
-	padding: 14px 24px;
-	margin-bottom: 30px;
-	}
-	
-	textarea {
-	width: 100%;
-	resize: none;   
-	padding: 14px 24px;
-	margin-bottom: 30px;
-	}	
-
-	input[type="checkbox"] {
-	display: none;
-	}
-	
 	label {
 	margin-right: 15px;
-	display: inline-flex;
+	}
 	
 	&:before {
-	content:'';
-	display: inline-block;
-	height: 16px;
-	width: 16px;
 	margin-right: 32px;
-	}
-	}
-	
-	input[type="checkbox"]:checked + label:before {
-	background: url("../img/checkbox.svg") no-repeat center;
 	}
 }
 

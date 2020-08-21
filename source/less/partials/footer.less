@@ -1,15 +1,90 @@
  
+.footer {
+	@media (min-width: 768px) and (max-width: 1023px) {
+	padding: 5%;
+	}
+}
+
 .footer__top-container {
 	height: 320px;
 	max-width: 1920px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	
+	@media (min-width: 768px) and (max-width: 1023px) {
+	height: auto;
+	flex-wrap: wrap;
+
+	}
 }
 
+.footer__top-item {
+
+	&:nth-child(2) {
+	display: flex;
+	flex-wrap: wrap;
+	
+	h4 {
+	order: 1;
+	width: 100%;
+	}
+		
+	.footer__top-item_first {
+	order: 2;
+	width: 70%;
+	}
+		
+	.footer__top-item_second {
+	order: 3;
+	width: 30%;
+	}
+	}
+	
+	@media (min-width: 768px) and (max-width: 1023px) {
+	
+	&:first-child {
+	order: 1;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+	
+	&:nth-child(2) {
+	order: 2;
+	width: 50%;
+	align-self: flex-start;
+	
+	.footer__top-item_first {
+	width: 100%;
+	}
+	
+	.footer__top-item_second {
+	width: 100%;
+	}
+	}
+	
+	&:nth-child(3) {
+	order: 3;
+	width: 50%;
+	align-self: flex-start;
+	}
+	}
+}
+
+/*грузануть svg*/
 .footer__logo img {
 	height: 52px;
 	width: 216px;
+}
+
+.footer__mobile-item {
+	display: none;
+	
+	@media (min-width: 768px) and (max-width: 1023px) {
+	display: flex;
+	}
 }
 
 .footer__socials img {
@@ -17,9 +92,55 @@
 	width: 26px;
 	margin-top: 80px;
 	margin-right: 15px;
+	
+	@media (min-width: 768px) and (max-width: 1023px) {
+	margin-top: 0;
+	}
+}
+
+.footer__logo:after {
+	@media (min-width: 768px) and (max-width: 1023px) {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	content: ".";
+	}
 }
 
 .footer__bottom-container {
 	display: flex;
 	justify-content: space-around;
+	
+	@media (min-width: 768px) and (max-width: 1023px) {
+	justify-content: space-between;
+	}
+	
+	&:after {	
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	content: ".";
+	}
+}
+
+.footer__bottom-item {
+	&:nth-child(4) {
+	width: 30%;
+	}
+	
+	@media (min-width: 768px) and (max-width: 1023px) {
+	&:nth-child(1), &:nth-child(2) {
+	display: none;
+	}
+	
+	&:nth-child(3) {
+	align-self: flex-start;
+	}
+	
+	&:nth-child(4) {
+	align-self: flex-end;
+	}
+	}
 }

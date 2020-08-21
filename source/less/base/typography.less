@@ -248,15 +248,16 @@ a {
 
 .footer__top-container {
 	font-size: 15px;
-}
 
-.footer__top-container h4 {
+	h4 {
 	line-height: 16px;
 	text-transform: uppercase;
-}
+	letter-spacing: 0.05em;
+	}
 
-.footer__top-container p {
+	p {
 	line-height: 25px;
+	}
 }
 
 .footer__bottom-container {
@@ -265,3 +266,10 @@ a {
 	text-align: center;
 	text-transform: uppercase;
 }
+
+.footer__bottom-item {
+	&:nth-child(4) {
+	text-align: right;
+	}
+}
+

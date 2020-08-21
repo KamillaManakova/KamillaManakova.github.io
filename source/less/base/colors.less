@@ -208,6 +208,14 @@ a {
 	}
 }
 
-.footer__bottom-container {	
+.footer__logo:after {
+	@media (min-width: 768px) and (max-width: 1023px) {
+	color: @color-white;
+	border-top: 1px solid fade(#626962, 20%);
+	}
+}
+
+.footer__bottom-container:after {	
+	color: @color-white;
 	border-top: 1px solid fade(#626962, 20%);
 }

@@ -1,18 +1,8 @@
-var acc = document.getElementsByClassName("footer__accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Переключение между добавлением и удалением класса "active",
-    чтобы выделить кнопку, управляющую панелью */
-    this.classList.toggle("active");
-
-    /* Переключение между скрытием и отображением активной панели */
-    var footer__panel = this.nextElementSibling;
-    if (footer__panel.style.display === "block") {
-      footer__panel.style.display = "none";
-    } else {
-      footer__panel.style.display = "block";
-    }
-  });
+function accordionFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("active") == -1) {
+    x.className += " active";
+  } else {
+    x.className = x.className.replace(" active", "");
+  }
 }

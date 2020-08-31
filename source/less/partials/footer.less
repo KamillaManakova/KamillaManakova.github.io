@@ -134,40 +134,57 @@
 	justify-content: center;
 	flex-direction: column;
 	}
+	
+	.accordion {
+	background-color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+  
+	&:after {
+	content: '\02795'; /* Символ юникода для "плюса" знак (+) */
+	font-size: 13px;
+	color: fade(@color-blueDark, 50%);
+	float: right;
+	margin-left: 5px;
+	}
+  	
+	@media (max-width: 767px) {
+	&:last-child:before {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	content: ".";
+		color: @color-white;
+	border-top: 1px solid fade(#626962, 20%);
+
+	}
+	}
+  
 }
 
-.footer__accordion {
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-.footer__panel {
+.panel {
   padding: 0 18px;
   display: none;
+  background-color: white;
   overflow: hidden;
-}
-
-.footer__accordion:after {
-  content: '\02795'; /* Символ юникода для "плюса" знак (+) */
-  font-size: 13px;
-  color: fade(@color-blueDark, 50%);
-  float: right;
-  margin-left: 5px;
 }
 
 .active:after {
   content: "\2796"; /* Символ юникода для "минуса" знак (-) */
 }
 
-.active, .footer__accordion:hover {
+.active {
   background-color: white;
+  height: auto;
+  display: block;
 }
-
+}
 .footer__socials img {
 	width: 26px;
 	height: 26px;
@@ -206,7 +223,8 @@
 	@media (min-width: 768px) and (max-width: 1023px) {
 	justify-content: space-between;
 	}
-	
+
+	@media (min-width: 767px) {	
 	&:after {	
 	display: block;
 	position: absolute;
@@ -214,9 +232,19 @@
 	width: 100%;
 	content: ".";
 	}
+	}
 	
 	@media (max-width: 767px) {
 	flex-direction: column;
+	
+	&:before {	
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	content: ".";
+	margin-bottom: 80px;
+	}
 	}
 }
 

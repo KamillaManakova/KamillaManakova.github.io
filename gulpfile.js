@@ -117,7 +117,7 @@ gulp.task("images", function() {
 
 
 
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 
 
 
@@ -198,6 +198,6 @@ gulp.task("clean", function () {
 
 
 
-gulp.task("build", gulp.series("clean", "webp", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "images", "webp", "copy", "css", "sprite", "html"));
 
 gulp.task("start", gulp.series("build", "server"));

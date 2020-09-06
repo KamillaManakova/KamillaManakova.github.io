@@ -218,6 +218,13 @@
 	}
 
 	&:last-child {
+	/*2.0 dpr */
+	@media 
+	(-webkit-min-device-pixel-ratio: 2), 
+	(min-resolution: 192dpi) { 
+	background-image: url("../img/panel@2x.webp")no-repeat, url("../img/panel@2x.png") no-repeat;
+	}
+	
 	background: url("../img/panel.webp") no-repeat, url("../img/panel.png") no-repeat;
 	width: 100%;
 	max-width: 705px;

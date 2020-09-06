@@ -30,6 +30,14 @@ https://htmlacademy.ru/blog/boost/frontend/form-validation-techniques
 	&:first-child {
 	flex: 1 1 570px;
 	height: 574px;
+	
+	/*2.0 dpr */
+	@media 
+	(-webkit-min-device-pixel-ratio: 2), 
+	(min-resolution: 192dpi) { 
+	background-image: url("../img/plane@2x.webp")no-repeat, url("../img/plane@2x.png") no-repeat;
+	}	
+	
 	background: url("../img/plane.webp") no-repeat, url("../img/plane.png") no-repeat;
 	background-position: top 80px right 90px;
 	background-size: 511px 288px;

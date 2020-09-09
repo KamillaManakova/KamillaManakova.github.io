@@ -6,3 +6,13 @@ function accordionFunction(id) {
     x.className = x.className.replace(" active", "");
   }
 }
+
+function plusFunction(id) {
+    var y = document.getElementById(id);
+  if (y.className.indexOf("opened") == -1) {
+    y.className += " opened";
+  } else {
+    y.className = y.className.replace(" opened", "");
+  }
+  
+ }

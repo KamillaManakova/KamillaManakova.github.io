@@ -11,7 +11,7 @@
 	width: 90%;
 	}
 	
-	@media (max-width: 768px) {	
+	@media (max-width: 767px) {	
 	width: 93%;
 	}
 	
@@ -31,13 +31,13 @@
 	width: 216px;
 	height: 52px;
 	
-	@media (max-width: 768px) {
+	@media (max-width: 767px) {
 	width: 38px;
 	heigth: 38px;
 	}
 }
 
-	span {
+span {
 	@media (max-width: 1023px) {
 	display: none;
 	}
@@ -52,7 +52,6 @@
 }
 
 .menu ul li {
-	
 	&:nth-child(1) {
 	background: url("../img/logo__header_white.svg") no-repeat;
 	height: 52px;
@@ -62,12 +61,12 @@
 	flex:1 0 202px;
 	}
 			
-	@media (max-width: 768px) {
+	@media (max-width: 767px) {
 	background: url("../img/logo__header_mobile.svg") no-repeat;
 	height: 38px;
 	flex:1 0 38px;
 	}
-} 
+	} 
 	
 	&:nth-child(2) {
 	flex:1 3 80px;
@@ -88,7 +87,7 @@
 	flex:0 1 70px;
 	}
 	
-	@media (max-width: 768px) {
+	@media (max-width: 767px) {
 	flex:0 1 50px;
 	}
 	}
@@ -110,20 +109,7 @@
 	}
 }
 
-/*кнопки вынести*/
-.menu__button {
-	border-radius: 5px;
-	padding: 14px 24px;
-	
-	&:hover {
-	cursor: pointer;
-	}
-	
-	@media (max-width: 1023px) {
-	display: none;
-	}
-}
-/*позиционирование треугольников*/
+/* Позиционирование треугольников в бэкграунде */
 .header {
 	background: url("../img/header-fon.svg") right 60px top no-repeat;
 	padding: 10% 2% 5% 3%;
@@ -136,7 +122,7 @@
 	padding: 10% 0 7% 3%;
 	}
 
-	@media (min-width: 320px) and (max-width: 767px) {
+	@media (max-width: 767px) {
 	background-position: right -250px top -100px;
 	background-size: 480px 480px;
 	padding: 10% 2% 13% 2%;
@@ -145,48 +131,7 @@
 	}
 }
 
-.header__button {
-	width: 407px;
-	height: 55px;
-	padding: 17px 34px;
-	border-radius: 5px;
-	margin-top: 30px;
-	margin-left: 90px;
-
-	@media (min-width: 768px) and (max-width: 1023px) {
-	width: 80%;
-	margin-top: 60px;
-	margin-left: 50px;
-	}
-
-	@media (min-width: 320px) and (max-width: 767px) {
-	width: 90%;
-	margin-top: 45px;
-	margin-left: 0;
-	}
-
-	&:hover {
-	cursor: pointer;
-	}
-}
-
-.header__button_desctop {
-	@media (min-width: 320px) and (max-width: 767px) {
-	display: none;
-	}
-}
-
-.header__button_mobile {
-	display: none;
-
-	@media (min-width: 320px) and (max-width: 767px) {
-	display: inline;
-	}
-}
-
-
 .header__item {
-	
 	h1~p { 
 	padding-left: 90px;
 	background: url("../img/header_rect.svg") no-repeat;
@@ -203,8 +148,8 @@
 	background-position: left 3px top 16px;	
 	}
 	}
-
-	/*transform-origin: bottom center;*/
+	
+/* Повернутый против часовой текст для скролла вниз */
 	a>p {
 	transform: rotate(-90deg);
 	margin-top: 100px;
@@ -216,12 +161,11 @@
 	display: none;
 	}
 	}
-
+	
+/* Изображение панели в бэкграунде */
 	&:last-child {
-	/*2.0 dpr */
-	@media 
-	(-webkit-min-device-pixel-ratio: 2), 
-	(min-resolution: 192dpi) { 
+	/* 2.0 dpr */
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 	background-image: url("../img/panel@2x.webp")no-repeat, url("../img/panel@2x.png") no-repeat;
 	}
 	

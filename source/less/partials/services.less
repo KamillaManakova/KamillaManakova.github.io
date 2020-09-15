@@ -24,10 +24,10 @@
 }
 
 .services__images {
-   margin: 0 auto;
-   max-width: 1170px;
-   display: flex;
-   justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1170px;
+	display: flex;
+	justify-content: space-between;
 	
 	@media (max-width: 1023px) {
 	flex-direction: column;
@@ -37,10 +37,8 @@
 
 
 .services__production {
-	/*2.0 dpr */
-	@media 
-	(-webkit-min-device-pixel-ratio: 2), 
-	(min-resolution: 192dpi) { 
+	/* 2.0 dpr */
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 	background-image: url("../img/production@2x.webp"), url("../img/production@2x.png");
 	}
 	
@@ -48,10 +46,8 @@
 }
 
 .services__montage {
-	/*2.0 dpr */
-	@media 
-	(-webkit-min-device-pixel-ratio: 2), 
-	(min-resolution: 192dpi) { 
+	/* 2.0 dpr */
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 	background-image: url("../img/montage@2x.webp"), url("../img/montage@2x.png");
 	}
 	
@@ -60,9 +56,7 @@
 
 .services__complect {
 	/*2.0 dpr */
-	@media 
-	(-webkit-min-device-pixel-ratio: 2), 
-	(min-resolution: 192dpi) { 
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 	background-image: url("../img/complect@2x.webp"), url("../img/complect@2x.png");
 	}
 	
@@ -73,7 +67,6 @@
 	width: 100%;
 	height: 256px;
 	margin-bottom: 46px;
-	/*padding: 43px 0 0 44px;*/
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -82,7 +75,6 @@
 .services__production, .services__montage, .services__complect {
 	width: 370px;
 	height: 620px;
-	/*padding: 44px 0 0 53px;*/
 	position: relative;
 	display: flex;
 	justify-content: flex-start;
@@ -91,7 +83,7 @@
 	.services__images_pad;
 	}
 
-	@media (min-width: 320px) and (max-width: 767px) {
+	@media (max-width: 767px) {
 	.services__images_pad;
 	margin-bottom: 30px;
 	}
@@ -113,17 +105,8 @@
 	margin: 43px 0 0 44px;
 	}
 
-	@media (min-width: 320px) and (max-width: 767px) {
+	@media (max-width: 767px) {
 	width: 60%;
 	margin: 23px 0 0 35px;
 	}	
-	
-}
-
-.services__button {
-	width: 63px;
-	height: 63px;
-	position: absolute;
-	right: 0;
-	bottom: 0;
 }

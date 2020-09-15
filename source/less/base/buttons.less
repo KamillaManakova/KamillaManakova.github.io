@@ -1,0 +1,88 @@
+button {
+	border-radius: 5px;
+	
+	&:hover {
+	cursor: pointer;
+	}
+}
+
+.popup__cancel {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	border: none;
+}
+
+.popup__button {
+	width: 100%;
+	.button_padding;
+	margin-bottom: 34px;
+}
+
+.menu__button {
+	padding: 14px 24px;
+	
+	@media (max-width: 1023px) {
+	display: none;
+	}
+}
+
+.header__button {
+	width: 407px;
+	height: 55px;
+	padding: 17px 34px;
+	margin-top: 30px;
+	margin-left: 90px;
+
+	@media (min-width: 768px) and (max-width: 1023px) {
+	width: 80%;
+	margin-top: 60px;
+	margin-left: 50px;
+	}
+
+	@media (max-width: 767px) {
+	width: 90%;
+	margin-top: 45px;
+	margin-left: 0;
+	}
+}
+
+.header__button_desctop {
+	@media (max-width: 767px) {
+	display: none;
+	}
+}
+
+.header__button_mobile {
+	display: none;
+
+	@media (max-width: 767px) {
+	display: inline;
+	}
+}
+
+.about-company__button {
+	margin-top: 20px;
+	.button_padding;
+}	
+	
+.services__button {
+	width: 63px;
+	height: 63px;
+	border-radius: 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.consult__button {
+	width: 47%;
+	margin-right: 39px;
+	.button_padding;
+	display: inline-block;
+	
+	@media (max-width: 767px) {
+	width: 100%;
+	margin: 0 0 30px 0;
+	}	
+}

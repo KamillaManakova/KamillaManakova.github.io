@@ -2,57 +2,6 @@ a {
 	color: inherit;
 }
 
-@color-blueDark: #1B2D37;
-@color-blueLight: #00B2FF;
-@color-white: #FFF;
-@color-grey: #666666;
-
-@border-blueLight: 1px solid @color-blueLight;
-@border-white: 1px solid @color-white;
-/*рамки кнопок после нажатия черные это видимо состояние focus */
-.button_BlueToWhite() {
-	background-color: @color-blueLight;
-	color: @color-white;
-	
-	&:hover {
-	background-color: @color-white;
-	color: @color-blueLight;
-	}
-	
-	&:active, &:focus {
-	outline: none;
-	}
-}
-
-.button_WhiteToBlue() {
-	background-color: @color-white;
-	color: @color-blueLight;
-	
-	&:hover {
-	background-color: @color-blueLight;
-	color: @color-white;
-	}
-	
-	&:active, &:focus {
-	outline: none;
-	}
-}
-
-.button_Transparent() {
-	background-color: fade(@color-white, 0%);
-	color: @color-white;
-	border: @border-white;
-	
-	&:hover {
-	color: @color-blueLight;
-	border: @border-blueLight;
-	}
-	
-	&:active, &:focus {
-	outline: none;
-	}
-}
-
 .form () {
 	background-color: @color-blueLight;
 	color: @color-white;
@@ -112,7 +61,6 @@ a {
 	color: fade(@color-white, 50%);
 }
 
-
 .advantages-about-company-fon {
 	background-color: @color-white;
 }
@@ -147,9 +95,6 @@ a {
 	}
 }
 
-
-
-
 .about-company_text {
 	h3, p {
 	color: @color-grey;
@@ -175,7 +120,7 @@ a {
 
 .services__production, .services__montage, .services__complect {
 	background-blend-mode: overlay;
-	background-color: fade(@color-blueDark, 70%);
+	background-color: fade(@color-blueDark, 50%);
 }
 
 .services__button {
@@ -183,7 +128,6 @@ a {
 	color: @color-white;
 	border: @border-blueLight;
 }
-
 
 .consult__button {
 	.button_BlueToWhite;
@@ -193,7 +137,6 @@ a {
 	border: @border-blueLight;
 	}
 }
-
 
 .footer {
 	background-color: @color-white;
@@ -211,18 +154,45 @@ a {
 .footer__logo:after {
 	@media (min-width: 768px) and (max-width: 1023px) {
 	color: @color-white;
-	border-top: 1px solid fade(#626962, 20%);
+	border-top: @footer-border;
 	}
 }
 
 .footer__socials:after {
 	@media (max-width: 767px) {
 	color: @color-white;
-	border-top: 1px solid fade(#626962, 20%);
+	border-top: @footer-border;
 	}
+}
+
+.footer__top-item_mobile {
+	.accordion {
+	background-color: @color-white;
+
+	&:after {
+	color: @color-white;
+	}
+	}
+	
+	.panel {
+	background-color: @color-white;
+	}
+	
+	#accordion-2:before {
+	color: @color-white;
+	border-top: @footer-border;
+	}
+	
+	.active {
+	background-color: @color-white;
+	}
+}
+
+button.accordion.opened:after {
+	color: @color-white;
 }
 
 .footer__bottom-container:before, .footer__bottom-container:after {	
 	color: @color-white;
-	border-top: 1px solid fade(#626962, 20%);
+	border-top: @footer-border;
 }

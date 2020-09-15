@@ -1,13 +1,4 @@
-/*заменить на svg
-https://htmlbase.ru/css/background-position
-http://htmlbook.ru/faq/kak-sdelat-chtoby-kartinka-menyalas-pri-navedenii-na-nee
-http://code.mu/ru/markup/manual/css/property/background-size/
-
-
-https://htmlacademy.ru/blog/boost/frontend/form-validation-techniques
-
-<input type=‘email’ name=‘email’ placeholder=‘email’>
-*/
+/* Позиционирование треугольников в бэкграунде */
 .consult {
 	background-image: url("../img/consult-fon.svg");
 	background-position: top -40px left -10px;
@@ -18,23 +9,21 @@ https://htmlacademy.ru/blog/boost/frontend/form-validation-techniques
 		
 	@media (max-width: 1023px) {
 	background-image: none;
-	padding: 5% 11% 13%;
+	padding: 5% 12%;
 	}
 	
 	@media (max-width: 767px) {
 	padding: 53px 4% 34px;
 	}
+}	
 	
-	.consult__item {
-	
+.consult__item {
 	&:first-child {
 	flex: 1 1 570px;
 	height: 574px;
-	
+	/* Изображение бумажного самолетика в бэкграунде */
 	/*2.0 dpr */
-	@media 
-	(-webkit-min-device-pixel-ratio: 2), 
-	(min-resolution: 192dpi) { 
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 	background-image: url("../img/plane@2x.webp")no-repeat, url("../img/plane@2x.png") no-repeat;
 	}	
 	
@@ -53,7 +42,6 @@ https://htmlacademy.ru/blog/boost/frontend/form-validation-techniques
 	
 	@media (max-width: 1023px) {
 	flex: 1 1 100%;
-	}
 	}
 	}
 }
@@ -92,13 +80,6 @@ https://htmlacademy.ru/blog/boost/frontend/form-validation-techniques
 	padding: 0;
 	}
 	
-	@media (max-width: 767px) {
-	width: 100%;
-	height: auto;
-	margin: 0 auto;
-	padding: 0;
-	}
-	
 	label {
 	width: 40%;
 	
@@ -107,27 +88,7 @@ https://htmlacademy.ru/blog/boost/frontend/form-validation-techniques
 	}
 	
 	&:before {
-/*как задать ширину*/
 	margin-right: 16px;
 	}
 	}
 }
-
-
-.consult__button {
-	width: 47%;
-	margin-right: 39px;
-	padding: 14px 50px;
-	border-radius: 5px;
-	display: inline-block;
-	
-	@media (max-width: 767px) {
-	width: 100%;
-	margin: 0 0 30px 0;
-	}
-	
-	&:hover {
-	cursor: pointer;
-	}
-}
-

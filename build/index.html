@@ -13,24 +13,21 @@
 		<link rel="icon" href="img/favicon.png" sizes="16x16 32x32" type="image/png">
 
 		<title>Сайт Service Device</title>
-		
-		<script src="js/popup.js"></script>
-		<script src="js/footer.js"></script>
 	</head>
 	
 	<body>
 	
 		<!-- Всплывающая форма -->
-		<div class="popup__display" id="popup__display">
+		<div class="popup" id="popup">
 			<form class="form popup__form" action="#!" method="post" enctype="multipart/form-data">
 				<button class="popup__cancel" type="button" onclick="closeForm()">&#10006;</button>
 				<h3>Закажите звонок</h3>
 				<p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-					<input type="text" name="Name" value="Имя">
-					<input type="tel" name="Phone" value="Телефон" maxlength="10">
-				<textarea name="Query" rows="4">Ваш вопрос</textarea>
-				<button class="popup__button" type="submit" value="Submit">отправить</button>
-				<input type="checkbox" id="popup__checkbox" checked="" name="Agreed" value="Yes">
+					<input type="text" name="name" value="Имя">
+					<input type="tel" name="phone" value="Телефон" maxlength="10">
+				<textarea name="query" rows="4">Ваш вопрос</textarea>
+				<button class="popup__button" type="submit" value="submit">отправить</button>
+				<input type="checkbox" id="popup__checkbox" checked="" name="agreed" value="Yes">
 				<label for="popup__checkbox">Я согласен на обработку персональных данных</label>
 			</form>
 		</div>
@@ -45,18 +42,18 @@
 					</li>	
 					<li>
 						<a a="" href="#">
-							<img src="img/menu_item.svg" alt="menu">
+							<img src="img/menu_item.svg">
 						</a>
 					</li>	
 					<li>
 						<a href="mailto:info@sd.ru">
-							<img src="img/envelope.svg" alt="mail">
+							<img src="img/envelope.svg">
 							<span>info@sd.ru</span>
 						</a>
 					</li>
 					<li>
 						<a href="tel:+74950005252">
-							<img src="img/phone-call.svg" alt="phone">
+							<img src="img/phone-call.svg">
 							<span>+7 (495) 000 52 52</span>
 						</a>
 					</li>
@@ -143,7 +140,7 @@
 				<picture>
 					<source srcset="img/2005@1x.webp 1x, img/2005@2x.webp 2x" type="image/webp">
 					<source srcset="img/2005@1x.png 1x, img/2005@2x.png 2x" type="image/png"> 
-					<img src="img/2005.png" alt="2005">
+					<img src="img/2005.png">
 				</picture>		
 				<div class="about-company_text">
 					<h3>О компании</h3>
@@ -152,7 +149,9 @@
 					<p>Наши поставщики - мировые производители электронных компонентов: 
 						OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Device применяются на предприятиях Российских 
 						Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие производители светотехники России.</p>
-					<button class="about-company__button" type="button">Подробнее</button>
+					<button class="about-company__button" type="button">
+						<a href="#!">Подробнее</a>
+					</button>
 				</div>			
 			</div>
 		</div>
@@ -192,12 +191,12 @@
 						<h3>Остались вопросы? Задайте их нам!</h3>
 						<p>Мы проконсультируем Вас бесплатно</p><p>
 							<div class="consult__input">
-								<input type="text" name="Name" value="Имя">
-								<input type="tel" name="Phone" value="Телефон">
+								<input type="text" name="name" value="Имя">
+								<input type="tel" name="phone" value="Телефон">
 							</div>
-						<textarea name="Query" rows="10">Ваш вопрос</textarea>
-						<button class="consult__button" type="submit" value="Submit">задать вопрос</button>
-						<input type="checkbox" id="consult__checkbox" checked="" name="Agreed" value="Yes">
+						<textarea name="query" rows="10">Ваш вопрос</textarea>
+						<button class="consult__button" type="submit" value="submit">задать вопрос</button>
+						<input type="checkbox" id="consult__checkbox" checked="" name="agreed" value="yes">
 						<label for="consult__checkbox">Я согласен на обработку персональных данных</label>
 				</p></form>
 			</div>
@@ -209,15 +208,15 @@
 			<div class="footer__top-container">
 				<div class="footer__top-item">
 					<div class="footer__logo">
-						<a href="#"><img src="img/logo__footer_black.svg" alt="logo_black"></a>
+						<a href="#"><img src="img/logo__footer_black.svg"></a>
 					</div>
 					<div class="footer__mobile-item">
 						<p>1999-2018 SD Service Device</p>
 					</div>
 					<div class="footer__socials">
-						<a href="https://www.facebook.com/"><img src="img/FB.svg" alt="facebook"></a>
-						<a href="https://ok.ru/"><img src="img/OK.svg" alt="odnoklassniki"></a>
-						<a href="https://vk.com/"><img src="img/VK.svg" alt="vkontakte"></a>
+						<a href="https://www.facebook.com/"><img src="img/FB.svg"></a>
+						<a href="https://ok.ru/"><img src="img/OK.svg"></a>
+						<a href="https://vk.com/"><img src="img/VK.svg"></a>
 					</div>
 				</div>
 				<div class="footer__top-item">
@@ -278,7 +277,9 @@
 				</div>	
 			</div>
 		</footer>
-			
+				
+		<script src="js/popup.js"></script>
+		<script src="js/footer.js"></script>	
 	</body>
 	
 </html>

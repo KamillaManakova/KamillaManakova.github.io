@@ -1,6 +1,6 @@
-var gulp = require('gulp'), 
+var gulp = require("gulp"),
 
-    less = require('gulp-less'); 
+    less = require("gulp-less");
 	"use strict";
 
 
@@ -61,7 +61,19 @@ gulp.task("css", function () {
 
 });
 
+gulp.task("less", function () {
 
+  return gulp.src("source/less/style.less")
+
+    .pipe(plumber())
+
+    .pipe(less())
+
+    .pipe(gulp.dest("build/css"))
+
+    .pipe(server.stream());
+
+});
 
 gulp.task("server", function () {
 
@@ -198,6 +210,6 @@ gulp.task("clean", function () {
 
 
 
-gulp.task("build", gulp.series("clean", "images", "webp", "copy", "css", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "images", "webp", "copy", "css", "less", "sprite", "html"));
 
 gulp.task("start", gulp.series("build", "server"));

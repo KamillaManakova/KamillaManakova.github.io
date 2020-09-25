@@ -1,80 +1,80 @@
-@color-blueDark: #1B2D37;
-@color-blueLight: #00B2FF;
-@color-white: #FFF;
-@color-grey: #666666;
+@blue_dark: #1b2d37;
+@blue_light: #00b2ff;
+@white: #fff;
+@grey: #666666;
 
-@border-blueLight: 1px solid @color-blueLight;
-@border-white: 1px solid @color-white;
-@footer-border: 1px solid fade(#626962, 20%);
+@border_blue: 1px solid @blue_light;
+@border_white: 1px solid @white;
+@border_grey: 1px solid fade(#626962, 20%);
 
-.button_padding() { 
-	padding: 14px 50px;
+.button_padding() {
+  padding: 14px 50px;
 }
 
-.button_BlueToWhite() {
-	background-color: @color-blueLight;
-	color: @color-white;
-	
-	&:hover {
-	background-color: @color-white;
-	color: @color-blueLight;
-	}
-	
-	&:active, &:focus {
-	outline: none;
-	}
+.button_blue() {
+  background-color: @blue_light;
+  color: @white;
+
+  &:hover {
+  background-color: @white;
+  color: @blue_light;
+  }
+
+  &:active, &:focus {
+  outline: none;
+  }
 }
 
-.button_WhiteToBlue() {
-	background-color: @color-white;
-	color: @color-blueLight;
-	
-	&:hover {
-	background-color: @color-blueLight;
-	color: @color-white;
-	}
-	
-	&:active, &:focus {
-	outline: none;
-	}
+.button_white() {
+  background-color: @white;
+  color: @blue_light;
+
+  &:hover {
+  background-color: @blue_light;
+  color: @white;
+  }
+
+  &:active, &:focus {
+  outline: none;
+  }
 }
 
-.button_Transparent() {
-	background-color: fade(@color-white, 0%);
-	color: @color-white;
-	border: @border-white;
-	
-	&:hover {
-	color: @color-blueLight;
-	border: @border-blueLight;
-	}
-	
-	&:active, &:focus {
-	outline: none;
-	}
+.button_transparent() {
+  background-color: fade(@white, 0%);
+  color: @white;
+  border: @border_white;
+
+  &:hover {
+  color: @blue_light;
+  border: @border_blue;
+  }
+
+  &:active, &:focus {
+  outline: none;
+  }
 }
 
 .font_14_16() {
-	font-size: 14px;
-	line-height: 16px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .font_16_22() {
-	font-size: 16px;
-	line-height: 22px;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .font_28_39() {
-	font-size: 28px;
-	line-height: 39px;
+  font-size: 28px;
+  line-height: 39px;
 }
 
 .font_32_45() {
-	font-size: 32px;
-	line-height: 45px;
+  font-size: 32px;
+  line-height: 45px;
 }
 
 .font_36_51() {
-	font-size: 36px;
-	line-height: 51px;
+  font-size: 36px;
+  line-height: 51px;
 }

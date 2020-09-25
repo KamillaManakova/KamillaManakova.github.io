@@ -1,112 +1,112 @@
 .services {
-	padding: 93px calc((100% - 1170px)/2) 127px;
-	
-	@media (min-width: 768px) and (max-width: 1023px) {
-	padding: 53px 5% 32px;
-	}
+  padding: 93px calc((100% - 1170px)/2) 127px;
 
-	@media (max-width: 767px) {
-	padding: 53px 4% 34px;
-	}
+  @media (min-width: 768px) and (max-width: 1023px) {
+  padding: 53px 5% 32px;
+  }
+
+  @media (max-width: 767px) {
+  padding: 53px 4% 34px;
+  }
 }
 
 .services h2 {
-	margin-bottom: 46px;
-	
-	@media (max-width: 1023px) {
-	margin-bottom: 40px;
-	}
-	
-	@media (max-width: 767px) {
-	margin-left: 10px;
-	margin-bottom: 50px;
-	}
+  margin-bottom: 46px;
+
+  @media (max-width: 1023px) {
+  margin-bottom: 40px;
+  }
+
+  @media (max-width: 767px) {
+  margin-left: 10px;
+  margin-bottom: 50px;
+  }
 }
 
 .services__images {
-	margin: 0 auto;
-	max-width: 1170px;
-	display: flex;
-	justify-content: space-between;
-	
-	@media (max-width: 1023px) {
-	flex-direction: column;
-	align-items: center;
-	}
+  margin: 0 auto;
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1023px) {
+  flex-direction: column;
+  align-items: center;
+  }
 }
 
 
 .services__production {
-	/* 2.0 dpr */
-	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-	background-image: url("../img/production@2x.webp"), url("../img/production@2x.png");
-	}
-	
-	background-image: url("../img/production.webp"), url("../img/production.png"); 
+  /* 2.0 dpr */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  background-image: url("../img/production@2x.webp"), url("../img/production@2x.png");
+  }
+
+  background-image: url("../img/production.webp"), url("../img/production.png");
 }
 
 .services__montage {
-	/* 2.0 dpr */
-	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-	background-image: url("../img/montage@2x.webp"), url("../img/montage@2x.png");
-	}
-	
-	background-image: url("../img/montage.webp"), url("../img/montage.png"); 
+  /* 2.0 dpr */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  background-image: url("../img/montage@2x.webp"), url("../img/montage@2x.png");
+  }
+
+  background-image: url("../img/montage.webp"), url("../img/montage.png");
 }
 
 .services__complect {
-	/*2.0 dpr */
-	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-	background-image: url("../img/complect@2x.webp"), url("../img/complect@2x.png");
-	}
-	
-	background-image: url("../img/complect.webp"), url("../img/complect.png"); 
+  /*2.0 dpr */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  background-image: url("../img/complect@2x.webp"), url("../img/complect@2x.png");
+  }
+
+  background-image: url("../img/complect.webp"), url("../img/complect.png");
 }
 
 .services__images_pad() {
-	width: 100%;
-	height: 256px;
-	margin-bottom: 46px;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+  width: 100%;
+  height: 256px;
+  margin-bottom: 46px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services__production, .services__montage, .services__complect {
-	width: 370px;
-	height: 620px;
-	position: relative;
-	display: flex;
-	justify-content: flex-start;
+  width: 370px;
+  height: 620px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
 
-	@media (min-width: 768px) and (max-width: 1023px) {
-	.services__images_pad;
-	}
+  @media (min-width: 768px) and (max-width: 1023px) {
+  .services__images_pad;
+  }
 
-	@media (max-width: 767px) {
-	.services__images_pad;
-	margin-bottom: 30px;
-	}
-	
-	a {
-	width: 100%;
-	height: 100%;
-	}
+  @media (max-width: 767px) {
+  .services__images_pad;
+  margin-bottom: 30px;
+  }
+
+  a {
+  width: 100%;
+  height: 100%;
+  }
 }
 
 .services__images p {
-	width: 50%;
-	margin: 44px 0 0 53px;
-	align-self: flex-start;
-	
-	
-	@media (min-width: 768px) and (max-width: 1023px) {
-	width: 25%;
-	margin: 43px 0 0 44px;
-	}
+  width: 50%;
+  margin: 44px 0 0 53px;
+  align-self: flex-start;
 
-	@media (max-width: 767px) {
-	width: 60%;
-	margin: 23px 0 0 35px;
-	}	
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+  width: 25%;
+  margin: 43px 0 0 44px;
+  }
+
+  @media (max-width: 767px) {
+  width: 60%;
+  margin: 23px 0 0 35px;
+  }
 }

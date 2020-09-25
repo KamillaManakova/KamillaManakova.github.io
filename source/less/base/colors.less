@@ -1,198 +1,198 @@
 a {
-	color: inherit;
+  color: inherit;
 }
 
 .form () {
-	background-color: @color-blueLight;
-	color: @color-white;
-	
-	input, textarea {
-	background-color: fade(@color-white, 10%);
-	border: @border-blueLight;
-	color: @color-white;
-	
-	&:focus{
-	border: @border-white;
-	}
-	}
+  background-color: @blue_light;
+  color: @white;
+
+  input, textarea {
+  background-color: fade(@white, 10%);
+  border: @border_blue;
+  color: @white;
+
+  &:focus{
+  border: @border_white;
+  }
+  }
 }
 
-.popup__display {
-	background-color: fade(#000, 50%);
+.popup {
+  background-color: fade(#000, 50%);
 }
 
 .popup__form, .consult {
-	.form;
-	
-	label:before {
-	border: @border-white;
-	color: @color-white;	
-	}
+  .form;
+
+  label:before {
+  border: @border_white;
+  color: @white;
+  }
 }
 
 .popup__cancel {
-	background-color: @color-blueLight;
-	color: @color-white;
+  background-color: @blue_light;
+  color: @white;
 }
 
 .popup__button {
-	.button_BlueToWhite;
-	border: @border-white;
+  .button_blue;
+  border: @border_white;
 }
 
 .header-menu-fon {
-	background-color: @color-blueDark;
-	
-	h1, p, li {
-	color: @color-white;
-	}
+  background-color: @blue_dark;
+
+  h1, p, li {
+  color: @white;
+  }
 }
 
 .menu__button {
-	.button_Transparent;
+  .button_transparent;
 }
 
 .header__button {
-	border: @border-blueLight;
-	.button_BlueToWhite;
+  border: @border_blue;
+  .button_blue;
 }
 
 .header__item a>p {
-	color: fade(@color-white, 50%);
+  color: fade(@white, 50%);
 }
 
 .advantages-about-company-fon {
-	background-color: @color-white;
+  background-color: @white;
 }
 
 .advantages__item {
-	background-color: @color-white;
-	border: 1px solid #EBEBEB;
-	border-left: 2px solid @color-blueLight;
-	
-	h4 {
-	color: @color-blueLight;
-	}	
+  background-color: @white;
+  border: 1px solid #ebebeb;
+  border-left: 2px solid @blue_light;
 
-	p {
-	color: @color-grey;
-	}	
+  h4 {
+  color: @blue_light;
+  }
 
-	&:hover {
-	background-color:@color-blueLight;
-	}	
+  p {
+  color: @grey;
+  }
 
-	&:hover svg path {
-	fill: @color-white;
-	}
+  &:hover {
+  background-color:@blue_light;
+  }
 
-	&:hover h4 {
-	color: @color-white;
-	}
-	
-	&:hover p {
-	color: @color-white;
-	}
+  &:hover svg path {
+  fill: @white;
+  }
+
+  &:hover h4 {
+  color: @white;
+  }
+
+  &:hover p {
+  color: @white;
+  }
 }
 
 .about-company_text {
-	h3, p {
-	color: @color-grey;
-	}
+  h3, p {
+  color: @grey;
+  }
 }
 
 .about-company__button {
-	border: @border-blueLight;
-	.button_WhiteToBlue;
+  border: @border_blue;
+  .button_white;
 
-	&:hover {
-	border: @border-white;
-	}
+  &:hover {
+  border: @border_white;
+  }
 }
 
 .services {
-	background-color: @color-blueDark;
-	
-	h2, p {
-	color: @color-white;
-	}
+  background-color: @blue_dark;
+
+  h2, p {
+  color: @white;
+  }
 }
 
 .services__production, .services__montage, .services__complect {
-	background-blend-mode: overlay;
-	background-color: fade(@color-blueDark, 50%);
+  background-blend-mode: overlay;
+  background-color: fade(@blue_dark, 50%);
 }
 
 .services__button {
-	background-color: @color-blueLight;
-	color: @color-white;
-	border: @border-blueLight;
+  background-color: @blue_light;
+  color: @white;
+  border: @border_blue;
 }
 
 .consult__button {
-	.button_BlueToWhite;
-	border: @border-white;
-	
-	&:hover {
-	border: @border-blueLight;
-	}
+  .button_blue;
+  border: @border_white;
+
+  &:hover {
+  border: @border_blue;
+  }
 }
 
 .footer {
-	background-color: @color-white;
+  background-color: @white;
 
-	h4 {
-	color: @color-blueDark;
-	}
+  h4 {
+  color: @blue_dark;
+  }
 
-	p {
-	color: 
-	fade(@color-blueDark, 50%);
-	}
+  p {
+  color:
+  fade(@blue_dark, 50%);
+  }
 }
 
 .footer__logo:after {
-	@media (min-width: 768px) and (max-width: 1023px) {
-	color: @color-white;
-	border-top: @footer-border;
-	}
+  @media (min-width: 768px) and (max-width: 1023px) {
+  color: @white;
+  border-top: @border_grey;
+  }
 }
 
 .footer__socials:after {
-	@media (max-width: 767px) {
-	color: @color-white;
-	border-top: @footer-border;
-	}
+  @media (max-width: 767px) {
+  color: @white;
+  border-top: @border_grey;
+  }
 }
 
 .footer__top-item_mobile {
-	.accordion {
-	background-color: @color-white;
+  .accordion {
+  background-color: @white;
 
-	&:after {
-	color: @color-white;
-	}
-	}
-	
-	.panel {
-	background-color: @color-white;
-	}
-	
-	#accordion-2:before {
-	color: @color-white;
-	border-top: @footer-border;
-	}
-	
-	.active {
-	background-color: @color-white;
-	}
+  &:after {
+  color: @white;
+  }
+  }
+
+  .panel {
+  background-color: @white;
+  }
+
+  #accordion-2:before {
+  color: @white;
+  border-top: @border_grey;
+  }
+
+  .active {
+  background-color: @white;
+  }
 }
 
 button.accordion.opened:after {
-	color: @color-white;
+  color: @white;
 }
 
-.footer__bottom-container:before, .footer__bottom-container:after {	
-	color: @color-white;
-	border-top: @footer-border;
+.footer__bottom-container:before, .footer__bottom-container:after {
+  color: @white;
+  border-top: @border_grey;
 }

@@ -1,94 +1,94 @@
 /* Позиционирование треугольников в бэкграунде */
 .consult {
-	background-image: url("../img/consult-fon.svg");
-	background-position: top -40px left -10px;
-	padding: 90px calc((100% - 1170px)/2) 127px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-		
-	@media (max-width: 1023px) {
-	background-image: none;
-	padding: 5% 12%;
-	}
-	
-	@media (max-width: 767px) {
-	padding: 53px 4% 34px;
-	}
-}	
-	
+  background-image: url("../img/consult_fon.svg");
+  background-position: top -40px left -10px;
+  padding: 90px calc((100% - 1170px)/2) 127px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1023px) {
+  background-image: none;
+  padding: 5% 12%;
+  }
+
+  @media (max-width: 767px) {
+  padding: 53px 4% 34px;
+  }
+}
+
 .consult__item {
-	&:first-child {
-	flex: 1 1 570px;
-	height: 574px;
-	/* Изображение бумажного самолетика в бэкграунде */
-	/*2.0 dpr */
-	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-	background-image: url("../img/plane@2x.webp")no-repeat, url("../img/plane@2x.png") no-repeat;
-	}	
-	
-	background: url("../img/plane.webp") no-repeat, url("../img/plane.png") no-repeat;
-	background-position: top 80px right 90px;
-	background-size: 511px 288px;
-	
-	
-	@media (max-width: 1023px) {
-	display: none;
-	}
-	}
-	
-	&:last-child {
-	flex: 0 0 570px;
-	
-	@media (max-width: 1023px) {
-	flex: 1 1 100%;
-	}
-	}
+  &:first-child {
+  flex: 1 1 570px;
+  height: 574px;
+  /* Изображение бумажного самолетика в бэкграунде */
+  /*2.0 dpr */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  background-image: url("../img/plane@2x.webp")no-repeat, url("../img/plane@2x.png") no-repeat;
+  }
+
+  background: url("../img/plane.webp") no-repeat, url("../img/plane.png") no-repeat;
+  background-position: top 80px right 90px;
+  background-size: 511px 288px;
+
+
+  @media (max-width: 1023px) {
+  display: none;
+  }
+  }
+
+  &:last-child {
+  flex: 0 0 570px;
+
+  @media (max-width: 1023px) {
+  flex: 1 1 100%;
+  }
+  }
 }
 
 .consult__form {
-	
-	h3 {
-	margin-top: 0;
-	margin-bottom: 25px;
-	}
-	
-	p {
-	margin-bottom: 52px;
-	
-	@media (max-width: 767px) {
-	margin-bottom: 30px;
-	}
-	}
-	
-	.consult__input {
-	display: flex;
-	
-	@media (max-width: 767px) {
-	display: block;
-	}
-	
-	input[type="text"]	{
-	margin-right: 30px;
-	}
-	}
-	
-	@media (max-width: 1023px) {
-	width: 100%;
-	height: auto;
-	margin: 0 auto;
-	padding: 0;
-	}
-	
-	label {
-	width: 40%;
-	
-	@media (max-width: 767px) {
-	width: 82%;
-	}
-	
-	&:before {
-	margin-right: 16px;
-	}
-	}
+
+  h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  }
+
+  p {
+  margin-bottom: 52px;
+
+  @media (max-width: 767px) {
+  margin-bottom: 30px;
+  }
+  }
+
+  .consult__input {
+  display: flex;
+
+  @media (max-width: 767px) {
+  display: block;
+  }
+
+  input[type="text"]  {
+  margin-right: 30px;
+  }
+  }
+
+  @media (max-width: 1023px) {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  }
+
+  label {
+  width: 40%;
+
+  @media (max-width: 767px) {
+  width: 82%;
+  }
+
+  &:before {
+  margin-right: 16px;
+  }
+  }
 }

@@ -9,8 +9,6 @@ var gulp = require("gulp");
 
 var plumber = require("gulp-plumber");
 
-var sourcemap = require("gulp-sourcemaps");
-
 var less = require("gulp-less");
 
 var postcss = require("gulp-postcss");
@@ -43,8 +41,6 @@ gulp.task("css", function () {
 
     .pipe(plumber())
 
-    .pipe(sourcemap.init())
-
     .pipe(less())
 
     .pipe(postcss([ autoprefixer() ]))
@@ -52,8 +48,6 @@ gulp.task("css", function () {
     .pipe(csso())
 
     .pipe(rename("style.min.css"))
-
-    .pipe(sourcemap.write("."))
 
     .pipe(gulp.dest("build/css"))
 

@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
   <head>
-    <meta charset="UTF-8">
-    <meta lang="ru">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="preload" href="/fonts/pt_mono-regular.woff2" as="font">
@@ -26,7 +24,7 @@
           <input type="text" name="name" value="Имя">
           <input type="tel" name="phone" value="Телефон" maxlength="10">
         <textarea name="query" rows="4">Ваш вопрос</textarea>
-        <button class="popup__button" type="submit" value="submit">отправить</button>
+        <button class="button popup__button" type="submit" value="submit">отправить</button>
         <input type="checkbox" id="popup__checkbox" checked="" name="agreed" value="yes">
         <label for="popup__checkbox">Я согласен на обработку персональных данных</label>
       </form>
@@ -41,24 +39,24 @@
             <a href="#" class="menu__logo"></a>
           </li>
           <li>
-            <a a="" href="#">
-              <img src="img/menu_item.svg">
+            <a href="#">
+              <img src="img/menu_item.svg" width="37" height="13">
             </a>
           </li>
           <li>
             <a href="mailto:info@sd.ru">
-              <img src="img/envelope.svg">
+              <img src="img/envelope.svg" width="19" height="14">
               <span>info@sd.ru</span>
             </a>
           </li>
           <li>
             <a href="tel:+74950005252">
-              <img src="img/phone_call.svg">
+              <img src="img/phone_call.svg" width="18" height="18">
               <span>+7 (495) 000 52 52</span>
             </a>
           </li>
           <li>
-            <button class="menu__button" type="button" onclick="openForm()">заказать звонок</button>
+            <button class="button menu__button" type="button" onclick="openForm()">заказать звонок</button>
           </li>
         </ul>
       </nav>
@@ -67,16 +65,14 @@
         <div class="header__item">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a href="#consult">
-            <button class="header__button header__button_desctop" type="button">Получить бесплатную консультацию</button>
-          </a>
-          <a href="#consult">
-            <button class="header__button header__button_mobile" type="button">Бесплатная консультация</button>
-          </a>
+            <button class="button header__button header__button_desctop" type="button">
+              <p><a href="#consult">Получить бесплатную консультацию</a></p>
+            </button>
+            <button class="button header__button header__button_mobile" type="button">
+              <p><a href="#consult">Бесплатная консультация</a></p>
+            </button>
           <!-- Прокрутка до следующего блока ("Преимущества") -->
-          <a href="#advantages">
-            <p>Скролл вниз</p>
-          </a>
+          <p><a href="#advantages">Скролл вниз</a></p>
         </div>
         <!-- Фото панели в бэкграунде -->
         <div class="header__item">
@@ -140,7 +136,7 @@
         <picture>
           <source srcset="img/2005@1x.webp 1x, img/2005@2x.webp 2x" type="image/webp">
           <source srcset="img/2005@1x.png 1x, img/2005@2x.png 2x" type="image/png">
-          <img src="img/2005.png">
+          <img src="img/2005.png" width="220" height="325">
         </picture>
         <div class="about-company_text">
           <h3>О компании</h3>
@@ -149,8 +145,8 @@
           <p>Наши поставщики - мировые производители электронных компонентов:
             OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Device применяются на предприятиях Российских
             Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие производители светотехники России.</p>
-          <button class="about-company__button" type="button">
-            <a href="#!">Подробнее</a>
+          <button class="button about-company__button" type="button">
+            <p><a href="#!">Подробнее</a></p>
           </button>
         </div>
       </div>
@@ -163,19 +159,19 @@
         <div class="services__production">
           <a href="#!">
             <p>Производство печатных плат</p>
-            <button class="services__button" type="button">&#8250;</button>
+            <button class="button services__button" type="button">&#8250;</button>
           </a>
         </div>
         <div class="services__montage">
           <a href="#!">
             <p>Монтаж печатных плат</p>
-            <button class="services__button" type="button">&#8250;</button>
+            <button class="button services__button" type="button">&#8250;</button>
           </a>
         </div>
         <div class="services__complect">
           <a href="#!">
             <p>Комплектующие для светотехники</p>
-            <button class="services__button" type="button">&#8250;</button>
+            <button class="button services__button" type="button">&#8250;</button>
           </a>
         </div>
       </div>
@@ -189,16 +185,16 @@
       <div class="consult__item">
         <form class="form consult__form" action="#!" method="post" enctype="multipart/form-data">
             <h3>Остались вопросы? Задайте их нам!</h3>
-            <p>Мы проконсультируем Вас бесплатно</p><p>
+            <p>Мы проконсультируем Вас бесплатно</p>
               <div class="consult__input">
                 <input type="text" name="name" value="Имя">
                 <input type="tel" name="phone" value="Телефон">
               </div>
             <textarea name="query" rows="10">Ваш вопрос</textarea>
-            <button class="consult__button" type="submit" value="submit">задать вопрос</button>
+            <button class="button consult__button" type="submit" value="submit">задать вопрос</button>
             <input type="checkbox" id="consult__checkbox" checked="" name="agreed" value="yes">
             <label for="consult__checkbox">Я согласен на обработку персональных данных</label>
-        </p></form>
+        </form>
       </div>
     </div>
 
@@ -208,15 +204,15 @@
       <div class="footer__top-container">
         <div class="footer__top-item">
           <div class="footer__logo">
-            <a href="#"><img src="img/logo_footer_black.svg"></a>
+            <a href="#"><img src="img/logo_footer_black.svg" width="216" height="52"></a>
           </div>
           <div class="footer__mobile-item">
             <p>1999-2018 SD Service Device</p>
           </div>
           <div class="footer__socials">
-            <a href="https://www.facebook.com/"><img src="img/fb.svg"></a>
-            <a href="https://ok.ru/"><img src="img/ok.svg"></a>
-            <a href="https://vk.com/"><img src="img/vk.svg"></a>
+            <a href="https://www.facebook.com/"><img src="img/fb.svg" width="27" height="27"></a>
+            <a href="https://ok.ru/"><img src="img/ok.svg" width="27" height="27"></a>
+            <a href="https://vk.com/"><img src="img/vk.svg" width="27" height="27"></a>
           </div>
         </div>
         <div class="footer__top-item">

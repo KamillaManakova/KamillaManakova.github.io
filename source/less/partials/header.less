@@ -132,7 +132,7 @@ span {
 }
 
 .header__item {
-  h1~p {
+  h1+p {
   padding-left: 90px;
   background: url("../img/header_rect.svg") no-repeat;
   background-position: left 3px top 21px;
@@ -146,19 +146,6 @@ span {
 
   @media (max-width: 767px) {
   background-position: left 3px top 16px;
-  }
-  }
-
-/* Повернутый против часовой текст для скролла вниз */
-  a>p {
-  transform: rotate(-90deg);
-  margin-top: 100px;
-  margin-left: -40px;
-  width: 93px;
-  height: 16px;
-
-  @media (max-width: 1023px) {
-  display: none;
   }
   }
 
@@ -188,3 +175,16 @@ span {
   }
   }
 }
+
+/* Повернутый против часовой текст для скролла вниз */
+.header__button+p {
+  transform: rotate(-90deg);
+  margin-top: 100px;
+  margin-left: -40px;
+  width: 93px;
+  height: 16px;
+
+  @media (max-width: 1023px) {
+  display: none;
+  }
+  }

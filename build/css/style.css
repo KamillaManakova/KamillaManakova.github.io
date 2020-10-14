@@ -100,6 +100,8 @@ a {
 }
 .popup__button:hover {
   background-color: #fff;
+}
+.popup__button:hover p {
   color: #00b2ff;
 }
 .popup__button:active,
@@ -120,8 +122,10 @@ a {
   border: 1px solid #fff;
 }
 .menu__button:hover {
-  color: #00b2ff;
   border: 1px solid #00b2ff;
+}
+.menu__button:hover p {
+  color: #00b2ff;
 }
 .menu__button:active,
 .menu__button:focus {
@@ -134,13 +138,15 @@ a {
 }
 .header__button:hover {
   background-color: #fff;
+}
+.header__button:hover p {
   color: #00b2ff;
 }
 .header__button:active,
 .header__button:focus {
   outline: none;
 }
-.header__item a > p {
+.header a[href="#advantages"] {
   color: rgba(255, 255, 255, 0.5);
 }
 .advantages-about-company-fon {
@@ -176,10 +182,14 @@ a {
 .about-company__button {
   border: 1px solid #00b2ff;
   background-color: #fff;
+}
+.about-company__button p {
   color: #00b2ff;
 }
 .about-company__button:hover {
   background-color: #00b2ff;
+}
+.about-company__button:hover p {
   color: #fff;
 }
 .about-company__button:active,
@@ -214,6 +224,8 @@ a {
 }
 .consult__button:hover {
   background-color: #fff;
+}
+.consult__button:hover p {
   color: #00b2ff;
 }
 .consult__button:active,
@@ -302,7 +314,7 @@ h5 {
   font-family: "roboto_condensed", "arial", sans-serif;
   font-weight: normal;
 }
-.button {
+.button > p {
   font-family: "roboto_condensed", "arial", sans-serif;
   font-weight: bold;
   text-align: center;
@@ -373,11 +385,11 @@ h5 {
     line-height: 25px;
   }
 }
-.header__button {
+.header__button > p {
   font-size: 16px;
   line-height: 19px;
 }
-.header__item a > p {
+.header a[href="#advantages"] {
   font-size: 14px;
   line-height: 16px;
 }
@@ -415,7 +427,7 @@ h5 {
   font-size: 16px;
   line-height: 22px;
 }
-.about-company__button {
+.about-company__button > p {
   font-size: 14px;
   line-height: 16px;
 }
@@ -453,7 +465,7 @@ h5 {
   font-size: 16px;
   line-height: 22px;
 }
-.consult__button {
+.consult__button > p {
   font-size: 14px;
   line-height: 16px;
 }
@@ -492,6 +504,8 @@ h5 {
 }
 .button {
   border-radius: 5px;
+  vertical-align: middle;
+  text-align: center;
 }
 .button:hover {
   cursor: pointer;
@@ -504,11 +518,10 @@ h5 {
 }
 .popup__button {
   width: 100%;
-  padding: 14px 50px;
   margin-bottom: 34px;
 }
 .menu__button {
-  padding: 14px 24px;
+  padding: 0 20px;
 }
 @media (max-width: 1023px) {
   .menu__button {
@@ -518,7 +531,6 @@ h5 {
 .header__button {
   width: 407px;
   height: 55px;
-  padding: 17px 34px;
   margin-top: 30px;
   margin-left: 90px;
 }
@@ -551,7 +563,7 @@ h5 {
 }
 .about-company__button {
   margin-top: 20px;
-  padding: 14px 50px;
+  padding: 0 54px;
 }
 .services__button {
   width: 63px;
@@ -564,7 +576,6 @@ h5 {
 .consult__button {
   width: 47%;
   margin-right: 39px;
-  padding: 14px 50px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -574,6 +585,7 @@ h5 {
     margin: 0 0 30px 0;
   }
 }
+/*нужен ли*/
 .popup {
   display: none;
   width: 100%;
@@ -765,36 +777,23 @@ span ~ img {
   }
 }
 .header__item {
-  /* Повернутый против часовой текст для скролла вниз */
   /* Изображение панели в бэкграунде */
 }
-.header__item h1 ~ p {
+.header__item h1 + p {
   padding-left: 90px;
   background: url("../img/header_rect.svg") no-repeat;
   background-position: left 3px top 21px;
 }
 @media (max-width: 1023px) {
-  .header__item h1 ~ p {
+  .header__item h1 + p {
     background-size: 33px;
     padding-left: 50px;
     background-position: left 3px top 17px;
   }
 }
 @media (max-width: 767px) {
-  .header__item h1 ~ p {
+  .header__item h1 + p {
     background-position: left 3px top 16px;
-  }
-}
-.header__item a > p {
-  transform: rotate(-90deg);
-  margin-top: 100px;
-  margin-left: -40px;
-  width: 93px;
-  height: 16px;
-}
-@media (max-width: 1023px) {
-  .header__item a > p {
-    display: none;
   }
 }
 .header__item:last-child {
@@ -822,6 +821,19 @@ span ~ img {
     width: 100%;
     height: 220px;
     margin-bottom: -40px;
+  }
+}
+/* Повернутый против часовой текст для скролла вниз */
+.header__button + p {
+  transform: rotate(-90deg);
+  margin-top: 100px;
+  margin-left: -40px;
+  width: 93px;
+  height: 16px;
+}
+@media (max-width: 1023px) {
+  .header__button + p {
+    display: none;
   }
 }
 .advantages-about-company-fon {
@@ -1064,14 +1076,6 @@ span ~ img {
 .consult__form h3 {
   margin-top: 0;
   margin-bottom: 25px;
-}
-.consult__form p {
-  margin-bottom: 52px;
-}
-@media (max-width: 767px) {
-  .consult__form p {
-    margin-bottom: 30px;
-  }
 }
 .consult__form .consult__input {
   display: flex;

@@ -6,7 +6,7 @@
 @border_blue: 1px solid @blue_light;
 @border_white: 1px solid @white;
 @border_grey: 1px solid fade(#626962, 20%);
-
+/*нужен ли*/
 .button_padding() {
   padding: 14px 50px;
 }
@@ -17,7 +17,10 @@
 
   &:hover {
   background-color: @white;
+
+  p {
   color: @blue_light;
+  }
   }
 
   &:active, &:focus {
@@ -27,11 +30,16 @@
 
 .button_white() {
   background-color: @white;
-  color: @blue_light;
+
+  p {color: @blue_light;
+  }
 
   &:hover {
   background-color: @blue_light;
+
+  p {
   color: @white;
+  }
   }
 
   &:active, &:focus {
@@ -45,8 +53,11 @@
   border: @border_white;
 
   &:hover {
-  color: @blue_light;
   border: @border_blue;
+
+  p {
+  color: @blue_light;
+  }
   }
 
   &:active, &:focus {

@@ -1,11 +1,24 @@
 /* Позиционирование треугольников в бэкграунде */
 .consult {
+  .form;
   background-image: url("../img/consult_fon.svg");
   background-position: top -40px left -10px;
   padding: 90px calc((100% - 1170px)/2) 127px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  input, textarea {
+  outline:none;
+  }
+
+  h3 {
+  .font_36_51;
+  }
+
+  p {
+  .font_16_22;
+  }
 
   @media (max-width: 1023px) {
   background-image: none;
@@ -82,5 +95,24 @@
   &:before {
   margin-right: 16px;
   }
+  }
+}
+
+.consult__button {
+  .button_blue;
+  .font_14_16;
+  width: 47%;
+  margin-right: 39px;
+  border: @border_white;
+  display: inline-block;
+  vertical-align: middle;
+
+  &:hover {
+  border: @border_blue;
+  }
+
+  @media (max-width: 767px) {
+  width: 100%;
+  margin: 0 0 30px 0;
   }
 }

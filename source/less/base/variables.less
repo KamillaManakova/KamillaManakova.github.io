@@ -17,10 +17,7 @@
 
   &:hover {
   background-color: @white;
-
-  p {
   color: @blue_light;
-  }
   }
 
   &:active, &:focus {
@@ -30,16 +27,11 @@
 
 .button_white() {
   background-color: @white;
-
-  p {color: @blue_light;
-  }
+  color: @blue_light;
 
   &:hover {
   background-color: @blue_light;
-
-  p {
   color: @white;
-  }
   }
 
   &:active, &:focus {
@@ -54,10 +46,7 @@
 
   &:hover {
   border: @border_blue;
-
-  p {
   color: @blue_light;
-  }
   }
 
   &:active, &:focus {
@@ -88,4 +77,19 @@
 .font_36_51() {
   font-size: 36px;
   line-height: 51px;
+}
+
+.form () {
+  background-color: @blue_light;
+  color: @white;
+
+  input, textarea {
+  background-color: fade(@white, 10%);
+  border: @border_blue;
+  color: @white;
+
+  &:focus{
+  border: @border_white;
+  }
+  }
 }

@@ -24,7 +24,7 @@
           <input type="text" name="name" value="Имя">
           <input type="tel" name="phone" value="Телефон" maxlength="10">
         <textarea name="query" rows="4">Ваш вопрос</textarea>
-        <button class="button popup__button" type="submit" value="submit"><p>отправить</p></button>
+        <button class="button popup__button" type="submit" value="submit">отправить</button>
         <input type="checkbox" id="popup__checkbox" checked="" name="agreed" value="yes">
         <label for="popup__checkbox">Я согласен на обработку персональных данных</label>
       </form>
@@ -56,7 +56,7 @@
             </a>
           </li>
           <li>
-            <button class="button menu__button" type="button" onclick="openForm()"><p>заказать звонок</p></button>
+            <button class="button menu__button" type="button" onclick="openForm()">заказать звонок</button>
           </li>
         </ul>
       </nav>
@@ -65,15 +65,11 @@
         <div class="header__item">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <button class="button header__button header__button_desctop" type="button">
-              <p><a href="#consult">Получить бесплатную консультацию</a></p>
-            </button>
-            <button class="button header__button header__button_mobile" type="button">
-              <p><a href="#consult">Бесплатная консультация</a></p>
-            </button>
+            <a class="button header__button header__button_desctop" href="#consult">Получить бесплатную консультацию<p></p>
+            <a class="button header__button header__button_mobile" href="#consult">Бесплатная консультация</a>
           <!-- Прокрутка до следующего блока ("Преимущества") -->
           <p><a href="#advantages">Скролл вниз</a></p>
-        </div>
+        </a></div>
         <!-- Фото панели в бэкграунде -->
         <div class="header__item">
         </div>
@@ -145,9 +141,7 @@
           <p>Наши поставщики - мировые производители электронных компонентов:
             OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Device применяются на предприятиях Российских
             Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие производители светотехники России.</p>
-          <button class="button about-company__button" type="button">
-            <p><a href="#!">Подробнее</a></p>
-          </button>
+          <a class="button about-company__button" href="#!">Подробнее</a>
         </div>
       </div>
     </div>
@@ -191,7 +185,7 @@
                 <input type="tel" name="phone" value="Телефон">
               </div>
             <textarea name="query" rows="10">Ваш вопрос</textarea>
-            <button class="button consult__button" type="submit" value="submit"><p>задать вопрос</p><p></p></button>
+            <button class="button consult__button" type="submit" value="submit">задать вопрос</button>
             <input type="checkbox" id="consult__checkbox" checked="" name="agreed" value="yes">
             <label for="consult__checkbox">Я согласен на обработку персональных данных</label>
         </form>

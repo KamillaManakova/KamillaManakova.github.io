@@ -1,48 +1,18 @@
 .popup {
+  background-color: fade(#000, 50%);
   display: none;
   width: 100%;
   height: 100%;
   position: fixed;
   z-index: 100;
-}
 
-.form {
-  input[type^="te"] {
-  width: 100%;
-  padding: 14px 24px;
-  margin-bottom: 30px;
-  }
-
-  textarea {
-  width: 100%;
-  resize: none;
-  padding: 14px 24px;
-  margin-bottom: 30px;
-  }
-
-  input[type="checkbox"] {
-  display: none;
-  }
-
-  label {
-  display: inline-flex;
-
-  &:before {
-  content:" ";
-  display: inline-block;
-  vertical-align: middle;
-  width: 16px;
-  height: 16px;
-  margin-right: 16px;
-  }
-  }
-
-  input[type="checkbox"]:checked + label:before {
-  background: url("../img/checkbox.svg") no-repeat center;
+  input, textarea {
+  outline:none;
   }
 }
 
 .popup__form {
+  .form;
   max-width: 490px;
   height: 605px;
   margin: 5% auto;
@@ -52,11 +22,13 @@
   flex-direction: column;
 
   h3 {
+  .font_28_39;
   margin-top: 0;
   margin-bottom: 10px;
   }
 
   p {
+  .font_16_22;
   margin-right: 15px;
   margin-bottom: 35px;
   }
@@ -68,4 +40,23 @@
   &:before {
   margin-right: 32px;
   }
+}
+
+.popup__cancel {
+  background-color: @blue_light;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 0;
+  color: @white;
+  border: none;
+}
+
+.popup__button {
+  .button_blue;
+  width: 100%;
+  margin-bottom: 34px;
+  border: @border_white;
 }

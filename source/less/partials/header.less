@@ -1,4 +1,5 @@
 .header-menu-fon {
+  background-color: @blue_dark;
   background-image: url("../img/ocean.webp"), url("../img/ocean.png");
   padding-top: 32px;
 
@@ -13,6 +14,10 @@
 
   @media (max-width: 767px) {
   width: 93%;
+  }
+
+  h1, p, li {
+  color: @white;
   }
 
   ul {
@@ -36,9 +41,15 @@
   heigth: 38px;
   }
 }
-
+/*исходно так
+.menu span {
+  font-size: 16px;
+  line-height: 18px;
+}*/
 span {
   @media (max-width: 1023px) {
+  font-size: 16px;
+  line-height: 18px;
   display: none;
   }
 
@@ -109,6 +120,18 @@ span {
   }
 }
 
+.menu__button {
+  .button_transparent;
+  .font_14_16;
+  text-align: center;
+  letter-spacing: 0.05em;
+  padding: 0 20px;
+
+  @media (max-width: 1023px) {
+  display: none;
+  }
+}
+
 /* Позиционирование треугольников в бэкграунде */
 .header {
   background: url("../img/header_fon.svg") right 60px top no-repeat;
@@ -128,6 +151,39 @@ span {
   padding: 10% 2% 13% 2%;
   flex-direction: column-reverse;
   align-items: center;
+  }
+}
+
+.header h1 {
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+  font-size: 60px;
+  line-height: 70px;
+  }
+
+  @media (max-width: 767px) {
+  font-size: 40px;
+  line-height: 47px;
+  }
+}
+
+.header p {
+  font-size: 22px;
+  line-height: 34px;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+  font-size: 18px;
+  line-height: 28px;
+  }
+
+  @media (max-width: 767px) {
+  font-size: 16px;
+  line-height: 25px;
   }
 }
 
@@ -176,6 +232,43 @@ span {
   }
 }
 
+.header__button {
+  .button_blue;
+  width: 407px;
+  height: 55px;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 30px;
+  margin-left: 90px;
+  border: @border_blue;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+  width: 80%;
+  margin-top: 60px;
+  margin-left: 50px;
+  }
+
+  @media (max-width: 767px) {
+  width: 90%;
+  margin-top: 45px;
+  margin-left: 0;
+  }
+}
+
+.header__button_desctop {
+  @media (max-width: 767px) {
+  display: none;
+  }
+}
+
+.header__button_mobile {
+  display: none;
+
+  @media (max-width: 767px) {
+  display: inline-block;
+  }
+}
+
 /* Повернутый против часовой текст для скролла вниз */
 .header__button+p {
   transform: rotate(-90deg);
@@ -187,4 +280,9 @@ span {
   @media (max-width: 1023px) {
   display: none;
   }
-  }
+}
+
+.header a[href="#advantages"] {
+  .font_14_16;
+  color: fade(@white, 50%);
+}

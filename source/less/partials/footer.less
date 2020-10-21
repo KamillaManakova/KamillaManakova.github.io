@@ -1,4 +1,15 @@
 .footer {
+  background-color: @white;
+
+  h4 {
+  color: @blue_dark;
+  }
+
+  p {
+  color:
+  fade(@blue_dark, 50%);
+  }
+
   @media (min-width: 768px) and (max-width: 1023px) {
   padding: 5px 5% 0;
   }
@@ -10,9 +21,20 @@
 
 .footer__top-container {
   height: 320px;
+  font-size: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  h4 {
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  }
+/*а в один лайн хайт нельзя?*/
+  p {
+  line-height: 16px;
+  }
 
   @media (min-width: 768px) and (max-width: 1023px) {
   height: auto;
@@ -134,54 +156,9 @@
   justify-content: center;
   flex-direction: column;
   }
-
-  .accordion {
-  cursor: pointer;
-  padding: 20px 0;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-
-  &:after {
-  content: ".";
-  background: url("../img/plus.svg") no-repeat center;
-  width: 16px;
-  height: 16px;
-  float: right;
-  }
-  }
-
-  .panel {
-  display: none;
-  overflow: hidden;
-  }
-
-  #accordion-2:before {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  content: ".";
-  margin-top: -20px;
-  }
-
-  .active {
-  height: auto;
-  display: block;
-  margin-top: -10px;
-  }
 }
 
-.button.accordion.opened:after {
-  content: ".";
-  background: url("../img/minus.svg") no-repeat center;
-  width: 16px;
-  height: 16px;
-  float: right;
 
-}
 
 .footer__socials img {
   width: 26px;
@@ -207,7 +184,9 @@
   position: absolute;
   left: 0;
   width: 100%;
+  color: @white;
   content: ".";
+  border-top: @border_grey;
   }
 }
 
@@ -218,18 +197,24 @@
   left: 0;
   width: 100%;
   margin-top: 50px;
+  color: @white;
   content: ".";
+  border-top: @border_grey;
   }
 }
 
 .footer__bottom-container {
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-around;
 
   @media (min-width: 768px) and (max-width: 1023px) {
   justify-content: space-between;
   }
-
+/*что это тут*?/
   @media (min-width: 767px) {
   &:after {
   display: block;
@@ -241,6 +226,7 @@
   }
 
   @media (max-width: 767px) {
+  line-height: 13px;
   flex-direction: column;
 
   &:before {
@@ -254,15 +240,22 @@
   }
 }
 
+.footer__bottom-container:before, .footer__bottom-container:after {
+  color: @white;
+  border-top: @border_grey;
+}
+
 .footer__bottom-item {
   &:nth-child(4) {
   width: 30%;
+  text-align: right;
 
   @media (max-width: 767px) {
   width: 100%;
+  text-align: center;
   }
   }
-
+/*this is kasha*/
   @media (max-width: 1023px) {
   &:nth-child(1), &:nth-child(2) {
   display: none;

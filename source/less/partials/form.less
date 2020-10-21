@@ -1,0 +1,41 @@
+/*разобраться с классом и аналогичным миксином в variables*/
+.form {
+  input[type^="te"] {
+  width: 100%;
+  padding: 14px 24px;
+  margin-bottom: 30px;
+  }
+
+  textarea {
+  width: 100%;
+  resize: none;
+  padding: 14px 24px;
+  margin-bottom: 30px;
+  }
+
+  input[type="checkbox"] {
+  display: none;
+  }
+
+  label {
+  display: inline-flex;
+  font-family: "pt_mono", "courier new", monospace;
+  .font_14_16;
+  vertical-align: middle;
+
+  &:before {
+  content:" ";
+  display: inline-block;
+  vertical-align: middle;
+  color: @white;
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
+  border: @border_white;
+  }
+}
+
+  input[type="checkbox"]:checked + label:before {
+  background: url("../img/checkbox.svg") no-repeat center;
+  }
+}

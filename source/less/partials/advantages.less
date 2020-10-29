@@ -58,6 +58,8 @@
 
 .advantages__item {
   h4 {
+  font-family: "roboto_condensed", "arial", sans-serif;
+  font-weight: normal;
   font-size: 24px;
   line-height: 34px;
   color: @blue_light;
@@ -70,13 +72,14 @@
 
   p {
   .font_16_22;
+  font-family: "pt_mono", "courier new", monospace;
   color: @grey;
   }
 
   &:hover {
   background-color:@blue_light;
   }
-
+/*вложенность*/
   &:hover svg path {
   fill: @white;
   }
@@ -93,11 +96,16 @@
 .about-company {
   margin-top: 5%;
   display: flex;
+}
 
-  img {
+.about-company_img {
+  background-image: url("../img/2005.webp"), url("../img/2005.png");
+  background-repeat: no-repeat;
+  width: 620px;
+  height: 325px;
+
   @media (max-width: 767px) {
   display: none;
-  }
   }
 }
 
@@ -111,6 +119,8 @@
 
 .about-company_text h3 {
   .font_36_51;
+  font-family: "roboto_condensed", "arial", sans-serif;
+  font-weight: normal;
 
   @media (min-width: 768px) and (max-width: 1023px) {
   .font_32_45;
@@ -123,6 +133,7 @@
 
 .about-company_text p {
   .font_16_22;
+  font-family: "pt_mono", "courier new", monospace;
 }
 
 .about-company__button {

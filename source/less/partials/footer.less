@@ -1,15 +1,6 @@
 .footer {
   background-color: @white;
 
-  h4 {
-  color: @blue_dark;
-  }
-
-  p {
-  color:
-  fade(@blue_dark, 50%);
-  }
-
   @media (min-width: 768px) and (max-width: 1023px) {
   padding: 5px 5% 0;
   }
@@ -19,22 +10,26 @@
   }
 }
 
+.footer {
+  h4 {
+  font-family: "roboto_condensed", "arial", sans-serif;
+  font-weight: normal;
+  color: @blue_dark;
+  }
+
+  p {
+  font-family: "pt_mono", "courier new", monospace;
+  color:
+  fade(@blue_dark, 50%);
+  }
+}
+
 .footer__top-container {
   height: 320px;
   font-size: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-
-  h4 {
-  line-height: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  }
-/*а в один лайн хайт нельзя?*/
-  p {
-  line-height: 16px;
-  }
 
   @media (min-width: 768px) and (max-width: 1023px) {
   height: auto;
@@ -48,6 +43,21 @@
   }
 }
 
+.footer__top-container {
+  h4 {
+  font-family: "roboto_condensed", "arial", sans-serif;
+  font-weight: normal;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  }
+/*а в один лайн хайт нельзя?*/
+  p {
+  font-family: "pt_mono", "courier new", monospace;
+  line-height: 16px;
+  }
+}
+
 .footer__top-item {
   &:nth-child(2) {
   display: flex;
@@ -58,17 +68,20 @@
   width: 100%;
   height: 1px;
   }
+  }
+}
 
-  .footer__top-item_first {
+.footer__top-item_first {
   order: 2;
   width: 70%;
   }
 
-  .footer__top-item_second {
+.footer__top-item_second {
   order: 3;
   width: 30%;
-  }
-  }
+}
+
+.footer__top-item {
 
   @media (min-width: 768px) and (max-width: 1023px) {
   &:first-child {
@@ -119,9 +132,10 @@
   }
 }
 
-.footer__logo img {
-  height: 52px;
+.footer__logo {
+  background: url("../img/logo_footer_black.svg") no-repeat;
   width: 216px;
+  height: 52px;
 
   @media (max-width: 767px) {
   width: 100%;
@@ -158,11 +172,9 @@
   }
 }
 
-
-
-.footer__socials img {
-  width: 26px;
-  height: 26px;
+.footer__socials a {
+  width: 27px;
+  height: 27px;
   margin-top: 80px;
   margin-right: 15px;
 
@@ -175,6 +187,20 @@
   @media (max-width: 767px) {
   margin-right: 7px;
   margin-left: 7px;
+  }
+}
+
+.footer__socials a {
+  &:nth-child(1) {
+  background: url("../img/fb.svg") no-repeat;
+  }
+
+  &:nth-child(2) {
+  background: url("../img/vk.svg") no-repeat;
+  }
+
+  &:nth-child(3) {
+  background: url("../img/ok.svg") no-repeat;
   }
 }
 

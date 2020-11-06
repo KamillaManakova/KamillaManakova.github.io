@@ -13,6 +13,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:hover {
+  opacity: 0.8;
+}
 .without_scroll {
   overflow: hidden;
 }
@@ -423,6 +426,7 @@ a {
 }
 .header__item h1 + p {
   font-family: "pt_mono", "courier new", monospace;
+  color: #fff;
   padding-left: 90px;
   background: url("../img/header_rect.svg") no-repeat;
   background-position: left 3px top 21px;

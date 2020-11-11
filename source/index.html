@@ -23,9 +23,12 @@
         <button class= "popup__cancel" type="button" onclick="closeForm()">&#10006;</button>
         <h3>Закажите звонок</h3>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-          <input type="text" name="name" value="Имя">
-          <input type="tel" name="phone" value="Телефон" maxlength="10">
-        <textarea name="query" rows=4>Ваш вопрос</textarea>
+        <label class="visually-hidden" for="name">Введите Ваше имя:</label>
+        <input type="text" name="name" placeholder="Имя" id="name" required="required">
+        <label class="visually-hidden" for="phone">Введите Ваш номер телефона:</label>
+        <input type="tel" name="phone" placeholder="Телефон" id="phone" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required="required">
+        <label class="visually-hidden" for="query">Введите Ваш вопрос:</label>
+        <textarea name="query" cols="30" rows="6" placeholder="Ваш вопрос" id="query" required="required"></textarea>
         <button class="button popup__button" type="submit" value="submit">отправить</button>
         <input type="checkbox" id="popup__checkbox" checked name="agreed" value="yes">
         <label for="popup__checkbox">Я согласен на обработку персональных данных</label>
@@ -176,10 +179,13 @@
             <h3>Остались вопросы? Задайте их нам!</h3>
             <p>Мы проконсультируем Вас бесплатно</p>
               <div class="consult__input">
-                <input type="text" name="name" value="Имя">
-                <input type="tel" name="phone" value="Телефон">
+                <label class="visually-hidden" for="consult__name">Введите Ваше имя:</label>
+                <input type="text" name="name" placeholder="Имя" id="consult__name" required="required">
+                <label class="visually-hidden" for="consult__phone">Введите Ваш номер телефона:</label>
+                <input type="tel" name="phone" placeholder="Телефон" id="consult__phone" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required="required">
               </div>
-            <textarea name="query" rows=10>Ваш вопрос</textarea>
+            <label class="visually-hidden" for="consult__query">Введите Ваш вопрос:</label>
+            <textarea name="query" cols="30" rows="6" placeholder="Ваш вопрос" id="consult__query" required="required"></textarea>
             <button class="button consult__button" type="submit" value="submit">задать вопрос</button>
             <input type="checkbox" id="consult__checkbox" checked name="agreed" value="yes">
             <label for="consult__checkbox">Я согласен на обработку персональных данных</label>
@@ -262,9 +268,9 @@
         </div>
       </div>
     </footer>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
 
-    <script src="js/popup.js"></script>
-    <script src="js/footer.js"></script>
   </body>
 
 </html>

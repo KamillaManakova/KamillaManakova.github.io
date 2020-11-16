@@ -215,6 +215,9 @@ a:hover {
 .popup__button:focus {
   outline: none;
 }
+.popup__show {
+  display: flex;
+}
 .header-menu-fon {
   background-color: #1b2d37;
   background-image: url("../img/ocean.webp"), url("../img/ocean.png");

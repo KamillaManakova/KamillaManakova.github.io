@@ -218,9 +218,14 @@ a:hover {
 .popup__show {
   display: flex;
 }
-.header-menu-fon {
+.header-menu-fon.webp-true {
   background-color: #1b2d37;
-  background-image: url("../img/ocean.webp"), url("../img/ocean.png");
+  background-image: url("../img/ocean.webp");
+  padding-top: 32px;
+}
+.header-menu-fon.webp-false {
+  background-color: #1b2d37;
+  background-image: url("../img/ocean.png");
   padding-top: 32px;
 }
 .menu {

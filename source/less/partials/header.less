@@ -2,12 +2,22 @@
   background-color: @blue_dark;
   background-image: url("../img/ocean.webp");
   padding-top: 32px;
+
+  @media (max-width: 767px) {
+  background-image: url("../img/ocean_mob.webp");
+  background-size: cover;
+  }
 }
 
 .header-menu-fon.webp-false {
   background-color: @blue_dark;
   background-image: url("../img/ocean.png");
   padding-top: 32px;
+
+  @media (max-width: 767px) {
+  background-image: url("../img/ocean_mob.png") no-repeat;
+  background-size: cover;
+  }
 }
 
 .menu {

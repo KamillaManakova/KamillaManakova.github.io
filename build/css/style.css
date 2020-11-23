@@ -223,10 +223,22 @@ a:hover {
   background-image: url("../img/ocean.webp");
   padding-top: 32px;
 }
+@media (max-width: 767px) {
+  .header-menu-fon.webp-true {
+    background-image: url("../img/ocean_mob.webp");
+    background-size: cover;
+  }
+}
 .header-menu-fon.webp-false {
   background-color: #1b2d37;
   background-image: url("../img/ocean.png");
   padding-top: 32px;
+}
+@media (max-width: 767px) {
+  .header-menu-fon.webp-false {
+    background-image: url("../img/ocean_mob.png") no-repeat;
+    background-size: cover;
+  }
 }
 .menu {
   margin-left: 1%;

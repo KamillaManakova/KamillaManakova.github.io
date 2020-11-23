@@ -791,31 +791,58 @@ a:hover {
     align-items: center;
   }
 }
-.services__production {
+.services__production.webp-true {
   /* 2.0 dpr */
-  background-image: url("../img/production.webp"), url("../img/production.png");
+  background-image: url("../img/production.webp");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .services__production {
-    background-image: url("../img/production@2x.webp"), url("../img/production@2x.png");
+  .services__production.webp-true {
+    background-image: url("../img/production@2x.webp");
   }
 }
-.services__montage {
+.services__production.webp-false {
   /* 2.0 dpr */
-  background-image: url("../img/montage.webp"), url("../img/montage.png");
+  background-image: url("../img/production.png");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .services__montage {
-    background-image: url("../img/montage@2x.webp"), url("../img/montage@2x.png");
+  .services__production.webp-false {
+    background-image: url("../img/production@2x.png");
   }
 }
-.services__complect {
+.services__montage.webp-true {
+  /* 2.0 dpr */
+  background-image: url("../img/montage.webp");
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .services__montage.webp-true {
+    background-image: url("../img/montage@2x.webp");
+  }
+}
+.services__montage.webp-false {
+  /* 2.0 dpr */
+  background-image: url("../img/montage.png");
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .services__montage.webp-false {
+    background-image: url("../img/montage@2x.png");
+  }
+}
+.services__complect.webp-true {
   /*2.0 dpr */
-  background-image: url("../img/complect.webp"), url("../img/complect.png");
+  background-image: url("../img/complect.webp");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .services__complect {
-    background-image: url("../img/complect@2x.webp"), url("../img/complect@2x.png");
+  .services__complect.webp-true {
+    background-image: url("../img/complect@2x.webp");
+  }
+}
+.services__complect.webp-false {
+  /*2.0 dpr */
+  background-image: url("../img/complect.png");
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .services__complect.webp-false {
+    background-image: url("../img/complect@2x.png");
   }
 }
 .services__production,

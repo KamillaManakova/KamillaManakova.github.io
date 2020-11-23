@@ -226,14 +226,14 @@
   }
   }
 }
-/* Изображение панели в бэкграунде */
-.header__item:last-child {
+/* Изображение панели в бэкграунде в формате webp*/
+.header__item.webp-true{
   /* 2.0 dpr */
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  background-image: url("../img/panel@2x.webp")no-repeat, url("../img/panel@2x.png") no-repeat;
+  background: url("../img/panel@2x.webp")no-repeat;
   }
 
-  background: url("../img/panel.webp") no-repeat, url("../img/panel.png") no-repeat;
+  background: url("../img/panel.webp") no-repeat;
   width: 100%;
   max-width: 705px;
   height: 515px;
@@ -244,7 +244,33 @@
   }
 
   @media (max-width: 767px) {
-  background: url("../img/panel_mob.webp") no-repeat, url("../img/panel_mob.png") no-repeat;
+  background: url("../img/panel_mob.webp") no-repeat;
+  background-size: 301px 220px;
+  background-position: right;
+  width: 100%;
+  height: 220px;
+  margin-bottom: -40px;
+  }
+}
+
+.header__item.webp-false{
+  /* 2.0 dpr */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  background: url("../img/panel@2x.png") no-repeat;
+  }
+
+  background: url("../img/panel.png") no-repeat;
+  width: 100%;
+  max-width: 705px;
+  height: 515px;
+
+  @media (max-width: 1023px) {
+  width: 50%;
+  background-size: 465px 340px;
+  }
+
+  @media (max-width: 767px) {
+  background: url("../img/panel_mob.png") no-repeat;
   background-size: 301px 220px;
   background-position: right;
   width: 100%;
